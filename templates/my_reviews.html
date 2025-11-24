@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>My Reviews</h2>
+
+{% if reviews %}
+  <ul>
+    {% for review in reviews %}
+      <li style="margin-bottom: 1rem;">
+        <strong>{{ review["rating"] }} stars</strong>
+        on
+        <a href="/spot/{{ review['spot_id'] }}">{{ review["spot_name"] }}</a><br>
+        {{ review["text"] }}<br>
+        <small>{{ review["created_at"] }}</small>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>You have not written any reviews yet.</p>
+  <p><a href="/spots">Browse spots</a> to start reviewing.</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>All Food Spots</h2>
+
+<form method="GET" action="/spots" style="margin-bottom: 1rem;">
+  <label>Search (name or category):</label>
+  <input
+    type="text"
+    name="q"
+    value="{{ request.args.get('q', '') }}"
+  >
+
+  <label style="margin-left: 1rem;">Min rating:</label>
+  <input
+    type="number"
+    name="min_rating"
+    min="1"
+    max="5"
+    step="0.1"
+    value="{{ request.args.get('min_rating', '') }}"
+  >
+
+  <button type="submit">Apply</button>
+  <a href="/spots">Clear</a>
+</form>
+
+{% if spots %}
+  <ul>
+    {% for spot in spots %}
+      <li>
+        <a href="/spot/{{ spot['id'] }}">{{ spot["name"] }}</a>
+        {% if spot["category"] %}
+          ({{ spot["category"] }})
+        {% endif %}
+
+        {% if spot["avg_rating"] is not none %}
+          – {{ spot["avg_rating"] }}★
+          ({{ spot["review_count"] }} review{% if spot["review_count"] != 1 %}s{% endif %})
+        {% else %}
+          – No reviews yet
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No spots match your search.</p>
+{% endif %}
+
+{% endblock %}

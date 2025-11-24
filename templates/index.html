@@ -1,10 +1,32 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Food App</title>
-  </head>
-  <body>
-    <h1>Welcome to the Food App</h1>
-    <p>If you see this message, Flask is running correctly.</p>
-  </body>
-</html>
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Welcome to the Food App</h2>
+
+{% if session.get("user_id") %}
+  <p>Hi {{ session["username"] }}! Use this app to discover food spots around you and share your own reviews.</p>
+  <p><a href="/add-spot">Add a new spot</a> or <a href="/spots">browse all spots</a>.</p>
+{% else %}
+  <p>Use this app to discover food spots and read reviews from other users.</p>
+  <p><a href="/register">Create an account</a> or <a href="/login">log in</a> to start adding your own spots and reviews.</p>
+{% endif %}
+
+<h3>Recently added spots</h3>
+
+{% if spots %}
+  <ul>
+    {% for spot in spots %}
+      <li>
+        <a href="/spot/{{ spot['id'] }}">{{ spot["name"] }}</a>
+        {% if spot["category"] %}
+          ({{ spot["category"] }})
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <p><a href="/spots">View all spots</a></p>
+{% else %}
+  <p>No spots yet. Be the first to <a href="/add-spot">add one</a>!</p>
+{% endif %}
+
+{% endblock %}

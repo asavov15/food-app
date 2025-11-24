@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>{{ spot["name"] }}</h2>
+<p>Category: {{ spot["category"] }}</p>
+
+{% if avg_rating %}
+  <p>Average rating: {{ avg_rating }}★ ({{ review_count }} review{% if review_count != 1 %}s{% endif %})</p>
+{% else %}
+  <p>No ratings yet.</p>
+{% endif %}
+
+<p>
+  Latitude: {{ spot["latitude"] }}<br>
+  Longitude: {{ spot["longitude"] }}
+</p>
+
+<h3>Reviews</h3>
+
+{% if reviews %}
+  <ul>
+    {% for review in reviews %}
+  <li>
+    <strong>{{ review["rating"] }} stars</strong>
+    {% if review["username"] %}
+      by {{ review["username"] }}
+    {% endif %}
+    <br>
+    {{ review["text"] }}
+  </li>
+{% endfor %}
+
+  </ul>
+{% else %}
+  <p>No reviews yet.</p>
+{% endif %}
+
+{% if session.get("user_id") %}
+  <h3>Add a Review</h3>
+
+  <form action="/spot/{{ spot['id'] }}/review" method="POST">
+    <label>Rating (1 to 5):</label><br>
+    <input type="number" name="rating" min="1" max="5" required><br><br>
+
+    <label>Your review:</label><br>
+    <textarea name="text" required></textarea><br><br>
+
+    <button type="submit">Submit Review</button>
+  </form>
+{% else %}
+  <p><a href="/login">Log in</a> to add a review.</p>
+{% endif %}
+
+
+<h3>Manage Spot</h3>
+<p>
+  <a href="/spot/{{ spot['id'] }}/edit">Edit this spot</a>
+</p>
+
+<form action="/spot/{{ spot['id'] }}/delete" method="POST"
+      onsubmit="return confirm('Are you sure you want to delete this spot?');">
+  <button type="submit">Delete this spot</button>
+</form>
+
+<h3>Favorites</h3>
+
+{% if session.get("user_id") %}
+  {% if is_favorite %}
+    <form action="/spot/{{ spot['id'] }}/unfavorite" method="POST">
+      <button type="submit">Remove from favorites</button>
+    </form>
+  {% else %}
+    <form action="/spot/{{ spot['id'] }}/favorite" method="POST">
+      <button type="submit">Add to favorites</button>
+    </form>
+  {% endif %}
+{% else %}
+  <p><a href="/login">Log in</a> to add this spot to your favorites.</p>
+{% endif %}
+
+
+<a href="/spots">Back to all spots</a>
+{% endblock %}
