@@ -3,6 +3,16 @@
 {% block content %}
 <h2>{{ spot["name"] }}</h2>
 <p>Category: {{ spot["category"] }}</p>
+<!-- TAGS -->
+<div class="tags" style="margin-bottom:10px;">
+  {% if spot.late_night %}<span class="tag">Late Night</span>{% endif %}
+  {% if spot.fine_dining %}<span class="tag">Fine Dining</span>{% endif %}
+  {% if spot.health_conscious %}<span class="tag">Health Conscious</span>{% endif %}
+  {% if spot.affordable %}<span class="tag">Affordable</span>{% endif %}
+  {% if spot.sweet_treat %}<span class="tag">Sweet Treat</span>{% endif %}
+  {% if spot.close %}<span class="tag">Close to Harvard Yard</span>{% endif %}
+</div>
+
 
 {% if avg_rating %}
   <p>Average rating: {{ avg_rating }}★ ({{ review_count }} review{% if review_count != 1 %}s{% endif %})</p>
@@ -52,6 +62,7 @@
 {% endif %}
 
 
+{% if session.get("is_admin") %}
 <h3>Manage Spot</h3>
 <p>
   <a href="/spot/{{ spot['id'] }}/edit">Edit this spot</a>
@@ -61,6 +72,8 @@
       onsubmit="return confirm('Are you sure you want to delete this spot?');">
   <button type="submit">Delete this spot</button>
 </form>
+{% endif %}
+
 
 <h3>Favorites</h3>
 

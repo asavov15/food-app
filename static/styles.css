@@ -5,3 +5,20 @@ body {
 h1 {
   color: #333;
 }
+#spots-map {
+  height: 400px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+.tag {
+  display: inline-block;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  padding: 3px 7px;
+  margin: 2px;
+  font-size: 0.8rem;
+  border: 1px solid #ccc;
+}
+.tags { margin-top: 4px; }
+
+

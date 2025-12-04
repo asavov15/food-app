@@ -4,6 +4,7 @@
 <h2>Add a New Spot</h2>
 
 <form action="/add-spot" method="POST">
+
   <label>Name:</label><br>
   <input type="text" name="name" required><br><br>
 
@@ -16,8 +17,40 @@
   <label>Longitude:</label><br>
   <input type="number" step="0.000001" name="longitude"><br><br>
 
+  <!-- NEW SECTION: TAGS -->
+  <fieldset>
+    <legend>Tags</legend>
+
+    <label>
+      <input type="checkbox" name="late_night" value="1">
+      Late Night Eats (open until 1am)
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="fine_dining" value="1">
+      Fine Dining
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="health_conscious" value="1">
+      Health Conscious
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="affordable" value="1">
+      Affordable
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="sweet_treat" value="1">
+      Sweet Treat
+    </label><br>
+  </fieldset>
+  <br>
+
   <button type="submit">Create Spot</button>
 </form>
 
+<br>
 <a href="/spots">Back to all spots</a>
 {% endblock %}

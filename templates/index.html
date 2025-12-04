@@ -16,13 +16,29 @@
 {% if spots %}
   <ul>
     {% for spot in spots %}
-      <li>
-        <a href="/spot/{{ spot['id'] }}">{{ spot["name"] }}</a>
-        {% if spot["category"] %}
-          ({{ spot["category"] }})
-        {% endif %}
-      </li>
-    {% endfor %}
+  <li>
+    <a href="/spot/{{ spot['id'] }}">{{ spot["name"] }}</a>
+    {% if spot["category"] %} ({{ spot["category"] }}) {% endif %}
+
+    {% if spot["avg_rating"] is not none %}
+      – {{ spot["avg_rating"] }}★
+      ({{ spot["review_count"] }} review{% if spot["review_count"] != 1 %}s{% endif %})
+    {% else %}
+      – No reviews yet
+    {% endif %}
+
+    <!-- TAGS -->
+    <div class="tags">
+      {% if spot.late_night %}<span class="tag">Late Night</span>{% endif %}
+      {% if spot.fine_dining %}<span class="tag">Fine Dining</span>{% endif %}
+      {% if spot.health_conscious %}<span class="tag">Health Conscious</span>{% endif %}
+      {% if spot.affordable %}<span class="tag">Affordable</span>{% endif %}
+      {% if spot.sweet_treat %}<span class="tag">Sweet Treat</span>{% endif %}
+      {% if spot.close %}<span class="tag">Close to Harvard Yard</span>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+
   </ul>
   <p><a href="/spots">View all spots</a></p>
 {% else %}
