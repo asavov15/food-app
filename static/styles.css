@@ -405,3 +405,10 @@ tr:nth-child(even) td {
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08); 
   overflow: hidden;        
 }
+
+.harvard_seal {
+  height: 32px;        
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;   
+}
