@@ -3,7 +3,7 @@
 {% block content %}
 <h2>All Food Spots</h2>
 
-<form method="GET" action="/spots" style="margin-bottom: 1rem;">
+<form method="GET" action="/spots">
   <label>Search (name or category):</label>
   <input
     type="text"
@@ -11,7 +11,7 @@
     value="{{ request.args.get('q', '') }}"
   >
 
-  <label style="margin-left: 1rem;">Min rating:</label>
+  <label>Min rating:</label>
   <input
     type="number"
     name="min_rating"
@@ -21,9 +21,74 @@
     value="{{ request.args.get('min_rating', '') }}"
   >
 
+  <fieldset>
+    <legend>Filter by tags:</legend>
+
+    <label>
+      <input
+        type="checkbox"
+        name="late_night"
+        value="1"
+        {% if request.args.get('late_night') %}checked{% endif %}
+      >
+      Late Night
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="fine_dining"
+        value="1"
+        {% if request.args.get('fine_dining') %}checked{% endif %}
+      >
+      Fine Dining
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="health_conscious"
+        value="1"
+        {% if request.args.get('health_conscious') %}checked{% endif %}
+      >
+      Health Conscious
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="affordable"
+        value="1"
+        {% if request.args.get('affordable') %}checked{% endif %}
+      >
+      Affordable
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="sweet_treat"
+        value="1"
+        {% if request.args.get('sweet_treat') %}checked{% endif %}
+      >
+      Sweet Treat
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="close"
+        value="1"
+        {% if request.args.get('close') %}checked{% endif %}
+      >
+      Close to Harvard Yard
+    </label>
+  </fieldset>
+
   <button type="submit">Apply</button>
   <a href="/spots">Clear</a>
 </form>
+
 
 <!-- Map container -->
 <div id="spots-map" data-spots='{{ spot_data | tojson | safe }}'></div>

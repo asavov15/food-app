@@ -116,6 +116,14 @@ def spots():
     q = request.args.get("q")          # search keyword
     min_rating = request.args.get("min_rating")  # minimum average rating
 
+    # Tag filters (checkboxes)
+    late_night = request.args.get("late_night")
+    fine_dining = request.args.get("fine_dining")
+    health_conscious = request.args.get("health_conscious")
+    affordable = request.args.get("affordable")
+    sweet_treat = request.args.get("sweet_treat")
+    close_tag = request.args.get("close")
+
     db = get_db()
 
     query = """
@@ -137,20 +145,35 @@ def spots():
         LEFT JOIN reviews ON reviews.spot_id = spots.id
     """
 
-
     conditions = []
     params = []
 
+    # Text search
     if q:
         conditions.append("(spots.name LIKE ? OR spots.category LIKE ?)")
         like_term = f"%{q}%"
         params.extend([like_term, like_term])
+
+    # Tag filters: each checked box adds a condition
+    if late_night:
+        conditions.append("spots.late_night = 1")
+    if fine_dining:
+        conditions.append("spots.fine_dining = 1")
+    if health_conscious:
+        conditions.append("spots.health_conscious = 1")
+    if affordable:
+        conditions.append("spots.affordable = 1")
+    if sweet_treat:
+        conditions.append("spots.sweet_treat = 1")
+    if close_tag:
+        conditions.append("spots.close = 1")
 
     if conditions:
         query += " WHERE " + " AND ".join(conditions)
 
     query += " GROUP BY spots.id"
 
+    # Min rating filter (works on aggregated avg_rating)
     if min_rating:
         query += " HAVING avg_rating >= ?"
         params.append(float(min_rating))
@@ -160,6 +183,7 @@ def spots():
     rows = db.execute(query, params).fetchall()
     db.close()
 
+    # Build data for the map
     spot_data = []
     for s in rows:
         spot_data.append({
@@ -176,10 +200,10 @@ def spots():
             "affordable": s["affordable"],
             "sweet_treat": s["sweet_treat"],
             "close": s["close"],
-    })
-
+        })
 
     return render_template("spots.html", spots=rows, spot_data=spot_data)
+
 
 
 
@@ -339,24 +363,40 @@ def edit_spot(spot_id):
     db = get_db()
 
     if request.method == "POST":
-        # Get updated values from the form
         name = request.form.get("name")
         category = request.form.get("category")
         latitude = request.form.get("latitude")
         longitude = request.form.get("longitude")
+
+        # Checkbox logic
+        late_night = 1 if request.form.get("late_night") else 0
+        fine_dining = 1 if request.form.get("fine_dining") else 0
+        health_conscious = 1 if request.form.get("health_conscious") else 0
+        affordable = 1 if request.form.get("affordable") else 0
+        sweet_treat = 1 if request.form.get("sweet_treat") else 0
+        close_tag = 1 if request.form.get("close") else 0
 
         if not name:
             db.close()
             return "Name is required", 400
 
         db.execute(
-            "UPDATE spots SET name = ?, category = ?, latitude = ?, longitude = ? WHERE id = ?",
-            (name, category, latitude, longitude, spot_id)
+            """
+            UPDATE spots
+            SET name = ?, category = ?, latitude = ?, longitude = ?,
+                late_night = ?, fine_dining = ?, health_conscious = ?,
+                affordable = ?, sweet_treat = ?, close = ?
+            WHERE id = ?
+            """,
+            (name, category, latitude, longitude,
+             late_night, fine_dining, health_conscious,
+             affordable, sweet_treat, close_tag, spot_id)
         )
         db.commit()
         db.close()
 
         return redirect(f"/spot/{spot_id}")
+
 
     # If GET, just show the existing data in the form
     spot = db.execute(

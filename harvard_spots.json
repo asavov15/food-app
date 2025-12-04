@@ -1,0 +1,2858 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-12-04T22:41:52Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 480692709,
+      "lat": 42.3728601,
+      "lon": -71.1174909,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1312",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "ice_cream",
+        "branch": "Harvard Square",
+        "brand": "J.P. Licks",
+        "brand:wikidata": "Q16997519",
+        "check_date": "2025-08-05",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "J.P. Licks",
+        "opening_hours": "Mo-Th 09:00-23:00, Fr-Sa 09:00-00:000, Su 10:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-492-1001",
+        "takeaway": "yes",
+        "website": "https://jplicks.com/locations/f/Cambridge-~amp~-Somerville/28",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 616945448,
+      "lat": 42.377249,
+      "lon": -71.1049217,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Thai Hut",
+        "opening_hours": "Mo-Sa 11:30-22:00",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 617249818,
+      "lat": 42.3783568,
+      "lon": -71.1067196,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "415",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Washington Street",
+        "amenity": "restaurant",
+        "cuisine": "spanish",
+        "name": "Dali",
+        "opening_hours": "We,Th,Su 17:30-23:00; Fr,Sa 17:30-23:30",
+        "phone": "+16176613254",
+        "website": "https://dalirestaurant.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 617249820,
+      "lat": 42.3780743,
+      "lon": -71.1065873,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "414",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Washington Street",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Kebab Factory"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1816988564,
+      "lat": 42.3775378,
+      "lon": -71.1153803,
+      "tags": {
+        "addr:city": "Cambridge",
+        "amenity": "cafe",
+        "name": "Bauer Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2328361462,
+      "lat": 42.383952,
+      "lon": -71.1108466,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:country": "US",
+        "addr:housenumber": "626C",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Somerville Avenue",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2025-04-18",
+        "cuisine": "chinese",
+        "name": "Chow n'Joy",
+        "opening_hours": "Su-Th 15:00-01:00, Fr,Sa 15:00-02:00",
+        "phone": "+1-617-623-4378",
+        "website": "http://www.chownjoy.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2475768995,
+      "lat": 42.3713955,
+      "lon": -71.1167459,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "49",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "amenity": "restaurant",
+        "name": "The Sea Hag"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2590730353,
+      "lat": 42.3718723,
+      "lon": -71.1208925,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "59",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "restaurant",
+        "name": "Grafton Street Pub & Grill",
+        "phone": "+1-617-714-5954",
+        "website": "https://graftonstreetcambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2777241126,
+      "lat": 42.3682614,
+      "lon": -71.1087976,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "912",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "pub",
+        "check_date": "2025-11-09",
+        "name": "The Plough and Stars",
+        "opening_hours": "Mo-We 11:30-01:00; Th-Fr 11:30-02:00; Sa 10:00-02:00; Su 10:00-01:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 576 0032",
+        "website": "https://www.ploughandstars.com/",
+        "wheelchair": "yes",
+        "wikidata": "Q7757526",
+        "wikipedia": "en:The Plough and Stars"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2777249475,
+      "lat": 42.3684329,
+      "lon": -71.1091866,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "928",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-07-22",
+        "name": "Pammy's",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-945-1761",
+        "website": "https://www.pammyscambridge.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2819172974,
+      "lat": 42.3712072,
+      "lon": -71.1145182,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1154",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/zinnekens-belgian-waffles-harvard-square-cambridge",
+        "cuisine": "waffle",
+        "email": "harvard@zinnekens.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Zinneken's",
+        "opening_hours": "Mo-Fr 11:00-23:00; Sa 10:00-23:00; Su 10:00-21:00",
+        "phone": "+1-617-876-0836",
+        "website": "http://zinnekenswaffles.com/harvard-square/",
+        "website:menu": "http://zinnekenswaffles.com/harvard-square-menu/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3010280539,
+      "lat": 42.3689611,
+      "lon": -71.1136071,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "31",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Putnam Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-08-18",
+        "contact:instagram": "https://www.instagram.com/circuscoopcafe",
+        "cuisine": "sandwich;coffee_shop",
+        "internet_access": "wlan",
+        "name": "Circus Cooperative Cafe",
+        "opening_hours": "08:00-15:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-945-7437",
+        "smoking": "no",
+        "toilets": "yes",
+        "website": "https://www.circus.coop/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3043603755,
+      "lat": 42.3687019,
+      "lon": -71.1098463,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "950",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-07-22",
+        "contact:facebook": "Dumplinghouseinc",
+        "contact:instagram": "dumplinghouse.cambridge",
+        "contact:twitter": "Dumpling_HouseM",
+        "contact:yelp": "dumpling-house-cambridge-4",
+        "cuisine": "chinese;dumplings",
+        "delivery": "yes",
+        "delivery:website": "https://order.online/store/dumpling-house-cambridge-1509",
+        "lunch": "We-Mo 11:00-15:00",
+        "lunch:specials": "yes",
+        "name": "Dumpling House",
+        "opening_hours": "Mo,We-Su 11:00-22:00; Tu off",
+        "opening_hours:kitchen": "We-Mon 11:00-21:30",
+        "phone": "+1-617-661-8066",
+        "takeaway": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.dumplinghousema.com/",
+        "website:menu": "https://order.online/store/dumpling-house-cambridge-1509",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3602530219,
+      "lat": 42.3708518,
+      "lon": -71.1136824,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1105",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-09-06",
+        "cuisine": "burger",
+        "level": "0",
+        "name": "Boston Burger Company",
+        "opening_hours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00; Su 12:00-22:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-857-242-3605",
+        "website": "http://www.bostonburgerco.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3625525213,
+      "lat": 42.3730267,
+      "lon": -71.1108039,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-07-06",
+        "check_date:opening_hours": "2025-07-06",
+        "cuisine": "pizza",
+        "name": "Angelo's Pizza",
+        "opening_hours": "Mo-Fr 11:00-21:00; Sa 11:00-18:00",
+        "phone": "+1-617-661-8049",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3658341425,
+      "lat": 42.372168,
+      "lon": -71.118338,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "24",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Holyoke Street",
+        "amenity": "restaurant",
+        "check_date": "2025-09-07",
+        "contact:instagram": "https://www.instagram.com/bossoramentavern/",
+        "contact:yelp": "https://www.yelp.com/biz/bosso-ramen-tavern-cambridge",
+        "cuisine": "japanese",
+        "name": "Bosso Ramen Tavern",
+        "reservation": "yes",
+        "website": "https://www.bossoramentavern.com/",
+        "website:menu": "https://static1.squarespace.com/static/653febfefe457033ba748f23/t/655f3da7d1c0f4729b05d8ff/1700740519178/2023+Fall+and+Winter+Drink+and+Food+Menu.pdf",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3708521822,
+      "lat": 42.3742959,
+      "lon": -71.1219649,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-05-30",
+        "cuisine": "italian",
+        "diet:vegetarian": "yes",
+        "name": "Toscanni"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3895958399,
+      "lat": 42.3851018,
+      "lon": -71.1191244,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1755",
+        "addr:postcode": "02140",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2025-08-05",
+        "check_date:opening_hours": "2025-07-16",
+        "contact:phone": "+1-617-714-4944",
+        "contact:website": "https://abbeyonlinestore.com/",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "name": "The Abbey",
+        "opening_hours": "Mo-Fr 11:00-02:00, Sa,Su 10:00-02:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "website:menu": "https://order.toasttab.com/online/abbey2cambridge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4172418807,
+      "lat": 42.3729692,
+      "lon": -71.1178668,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1326",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "fast_food",
+        "check_date": "2025-08-05",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Clover Food Lab",
+        "opening_hours": "Mo-Sa 07:00-22:00; Su 11:00-20:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.cloverfoodlab.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4190132060,
+      "lat": 42.3838633,
+      "lon": -71.1107118,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "626",
+        "addr:state": "MA",
+        "addr:street": "Somerville Avenue",
+        "amenity": "cafe",
+        "check_date": "2024-06-20",
+        "contact:email": "info@forgebakingco.com",
+        "contact:website": "http://www.forgebakingco.com/",
+        "cuisine": "coffee_shop",
+        "email": "info@forgebakingco.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Forge Baking Company",
+        "opening_hours": "Mo-Su 07:00-19:00",
+        "outdoor_seating": "no",
+        "phone": "+1-617-764-5365",
+        "website": "http://www.forgebakingco.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267069467,
+      "lat": 42.3731448,
+      "lon": -71.1195115,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "14",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "restaurant",
+        "check_date": "2025-08-05",
+        "name": "Russell House Tavern"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267069469,
+      "lat": 42.3725971,
+      "lon": -71.1199019,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:state": "MA",
+        "amenity": "fast_food",
+        "check_date": "2025-09-06",
+        "cuisine": "burger",
+        "drive_through": "no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Tasty Burger",
+        "opening_hours": "Mo-Th, Su 11:00-24:00; Fr, Sa 11:00-01:00",
+        "outdoor_seating": "no",
+        "sport": "billiards",
+        "takeaway": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267069470,
+      "lat": 42.372476,
+      "lon": -71.1194815,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:state": "MA",
+        "amenity": "restaurant",
+        "level": "0",
+        "name": "Chutney's",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267098790,
+      "lat": 42.3740762,
+      "lon": -71.120629,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Sinclair",
+        "wikidata": "Q112117387"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267134584,
+      "lat": 42.3737684,
+      "lon": -71.1218285,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Harvest",
+        "wikidata": "Q118896696"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267278517,
+      "lat": 42.3722812,
+      "lon": -71.1233211,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Henrietta's Table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267278518,
+      "lat": 42.372203,
+      "lon": -71.1228944,
+      "tags": {
+        "amenity": "bar",
+        "name": "Regattabar",
+        "wikidata": "Q26882947"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267278519,
+      "lat": 42.3723595,
+      "lon": -71.1226705,
+      "tags": {
+        "amenity": "bar",
+        "name": "Noir",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267292053,
+      "lat": 42.3724072,
+      "lon": -71.1215195,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "10",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Eliot Street",
+        "amenity": "restaurant",
+        "cuisine": "diner;american;burger",
+        "name": "Charlie's Kitchen",
+        "opening_hours": "Su-We 11:00-01:00; Th-Sa 11:00-02:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 492 9646",
+        "website": "https://www.charlieskitchen.com/",
+        "wikidata": "Q14715437",
+        "wikipedia": "en:Charlie's Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267292054,
+      "lat": 42.372063,
+      "lon": -71.1214254,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "16",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Eliot Street",
+        "amenity": "restaurant",
+        "brand": "IHOP",
+        "brand:wikidata": "Q1185675",
+        "cuisine": "breakfast;pancake",
+        "name": "IHOP",
+        "opening_hours": "07:00-22:00",
+        "phone": "+1 617-354-0999",
+        "website": "https://restaurants.ihop.com/en-us/ma/cambridge/breakfast-16-eliot-st-3151"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267292079,
+      "lat": 42.3726335,
+      "lon": -71.1206838,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Peet's Coffee",
+        "brand:wikidata": "Q1094101",
+        "check_date": "2025-09-06",
+        "cuisine": "coffee_shop",
+        "name": "Peet's Coffee",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267292083,
+      "lat": 42.3724217,
+      "lon": -71.1209044,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "89",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Winthrop Street",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Grendel's Den",
+        "opening_hours": "11:30-01:00",
+        "outdoor_seating": "yes",
+        "phone": "+16174911160",
+        "website": "https://www.grendelsden.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4378426737,
+      "lat": 42.3721154,
+      "lon": -71.1158389,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Bow Street",
+        "amenity": "restaurant",
+        "branch": "Harvard Square",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/hokkaido-ramen-santouka-harvard-square-cambridge",
+        "cuisine": "ramen",
+        "delivery": "no",
+        "level": "0",
+        "name": "Hokkaido Ramen Santouka",
+        "opening_hours": "Mo-Th 11:00-21:00; Fr-Su 11:00-21:30",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-945-1460",
+        "reservation": "no",
+        "start_date": "2015",
+        "takeaway": "yes",
+        "website": "https://www.santouka.co.jp/en/shop-foreigin/usa/foreign01-011",
+        "website:menu": "https://www.santouka-usa.com/menu",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4540532983,
+      "lat": 42.3697046,
+      "lon": -71.1119024,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1033",
+        "addr:postcode": "02318",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "drive_through": "no",
+        "name": "Domino's",
+        "opening_hours": "Mo-Sa 10:30-02:00; Su 10:30-01:00",
+        "phone": "+1 617-441-2101",
+        "ref": "3748",
+        "short_name": "Domino's",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://pizza.dominos.com/massachusetts/cambridge/02138/1033-massachusetts-ave/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4549551449,
+      "lat": 42.3722961,
+      "lon": -71.1209868,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "92",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Winthrop Street",
+        "amenity": "fast_food",
+        "brand": "Shake Shack",
+        "brand:wikidata": "Q1058722",
+        "check_date": "2025-09-06",
+        "cuisine": "burger",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "Shake Shack",
+        "opening_hours": "Su-We 11:00-22:00; Th-Sa 11:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+16177588495",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "website": "https://www.shakeshack.com/location/harvard-square/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4731133947,
+      "lat": 42.3735585,
+      "lon": -71.1213903,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "american",
+        "level": "-1",
+        "name": "Alden & Harlow",
+        "outdoor_seating": "no",
+        "website": "https://www.aldenharlow.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4826277222,
+      "lat": 42.3734706,
+      "lon": -71.120511,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "21",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Brattle Street",
+        "amenity": "restaurant",
+        "check_date": "2023-05-30",
+        "cuisine": "mexican;bar",
+        "name": "Felipe's Taqueria",
+        "name:en": "Felipe's",
+        "opening_hours": "Su-We 11:00-24:00; Th-Sa 11:00-02:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617-354-9944",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4831816270,
+      "lat": 42.3749209,
+      "lon": -71.109122,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1625",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Cambridge Street",
+        "amenity": "restaurant",
+        "check_date": "2025-08-01",
+        "cuisine": "pizza",
+        "name": "Cambridge Italian Pizzaria",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4978287999,
+      "lat": 42.3741932,
+      "lon": -71.1211652,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "61",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Church Street",
+        "alt_name": "Dunkin' Donuts",
+        "amenity": "fast_food",
+        "brand": "Dunkin'",
+        "brand:wikidata": "Q847743",
+        "contact:website": "https://locations.dunkindonuts.com/en/ma/cambridge/61-church-st/350183",
+        "cuisine": "donut;coffee_shop",
+        "drive_through": "no",
+        "name": "Dunkin'",
+        "opening_hours": "Mo-Sa 05:00-22:00; Su 06:00-22:00",
+        "phone": "+16177143827",
+        "ref": "350183",
+        "takeaway": "yes",
+        "website": "https://locations.dunkindonuts.com/en/ma/cambridge/61-church-st/350183"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5287449771,
+      "lat": 42.3717481,
+      "lon": -71.1206486,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "58",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "bar",
+        "ele": "-1",
+        "name": "Shays Pub and Wine Bar",
+        "opening_hours": "11:00-01:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5638563110,
+      "lat": 42.3779776,
+      "lon": -71.1073302,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "100",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Kirkland Street",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Broadsheet Coffee Roasters",
+        "opening_hours:covid19": "Mo-Fr 08:00-14:00; Sa-Su 09:00-15:00",
+        "phone": "+1 617 945 2867",
+        "website": "https://www.broadsheetcoffee.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6020288488,
+      "lat": 42.3704951,
+      "lon": -71.1043878,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "364",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Broadway",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;cake",
+        "name": "Barismo",
+        "phone": "+1-617-714-5536",
+        "website": "https://www.barismo.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6080902481,
+      "lat": 42.3720032,
+      "lon": -71.1202684,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "74",
+        "addr:state": "MA",
+        "addr:street": "Winthrop Street",
+        "amenity": "restaurant",
+        "check_date": "2025-08-05",
+        "cuisine": "pizza",
+        "description": "Landmark Harvard pizza place serving Sicilian-style pizza, pasta, and sandwiches.",
+        "name": "Pinocchio's Pizza and Subs",
+        "opening_hours": "Mo-Th 11:00-01:00, Fr,Sa 11:00-02:00, Su 12:00-24:00",
+        "payment:cash": "yes",
+        "payment:mobile_app": "yes",
+        "phone": "+1 617-876-4897",
+        "short_name": "Pinnochio's",
+        "website": "https://www.pinocchiospizza.net/index.html",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6080908844,
+      "lat": 42.3832828,
+      "lon": -71.1197976,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-08-05",
+        "cuisine": "pizza",
+        "indoor_seating": "yes",
+        "name": "Harvard House of Pizza",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6091711566,
+      "lat": 42.3844695,
+      "lon": -71.1196495,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1736",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-07-11",
+        "contact:facebook": "SimonsCoffeeShop",
+        "cuisine": "coffee_shop",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Simon's Coffee Shop",
+        "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su 08:00-15:30",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1 617-497-7766"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6101451279,
+      "lat": 42.3820677,
+      "lon": -71.1194801,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1667",
+        "addr:postcode": "02138-2706",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "pub",
+        "check_date": "2025-08-05",
+        "cuisine": "burger",
+        "lgbtq": "welcome",
+        "name": "Cambridge Common",
+        "opening_hours": "Mo-Th 12:00-24:00, Fr,Sa 12:00-01:00, Su 11:00-24:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 547 1228",
+        "website": "https://cambridgecommonrestaurant.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6101451791,
+      "lat": 42.3851611,
+      "lon": -71.1191251,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1759",
+        "addr:postcode": "02140",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2025-07-16",
+        "cuisine": "ramen;sushi",
+        "email": "info@oneramencambridge.com",
+        "fax": "+1 617 864 6296",
+        "name": "One Ramen & Sushi",
+        "opening_hours": "Mo 11:30-22:00; We-Su 11:30-22:00",
+        "phone": "+1 617 864 6299",
+        "website": "https://oneramencambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6101491942,
+      "lat": 42.3841278,
+      "lon": -71.1196974,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1728",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "cuisine": "mexican",
+        "name": "Chivo Taqueria",
+        "opening_hours": "Mo-Fr 10:00-10:00; Sa-Su 08:00-11:00",
+        "phone": "+18572423343",
+        "website": "https://www.chivoboston.com/contact"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6101491945,
+      "lat": 42.383964,
+      "lon": -71.1197191,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "seafood;poke",
+        "name": "Poké City",
+        "opening_hours": "Mo-Su,PH 11:30-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6101491948,
+      "lat": 42.3831991,
+      "lon": -71.119797,
+      "tags": {
+        "amenity": "ice_cream",
+        "check_date": "2025-08-05",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "drive_through": "no",
+        "lgbtq": "welcome",
+        "name": "Honeycomb Creamery",
+        "opening_hours": "Su-Th 12:00-22:00; Fr,Sa 12:00-23:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6101491953,
+      "lat": 42.3827376,
+      "lon": -71.1198364,
+      "tags": {
+        "amenity": "bar",
+        "name": "Barcelona"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6101530121,
+      "lat": 42.3741412,
+      "lon": -71.1190921,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-06-30",
+        "cuisine": "pizza",
+        "name": "Otto",
+        "opening_hours": "Mo-Su 10:30-24:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6111160822,
+      "lat": 42.3713445,
+      "lon": -71.116583,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "45.5",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "amenity": "restaurant",
+        "name": "Daedalus",
+        "opening_hours": "Su-We 11:00-01:00; Th-Sa 11:00-02:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.daedalusrestaurantcambridge.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6113522434,
+      "lat": 42.3838875,
+      "lon": -71.1107985,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "626",
+        "addr:state": "MA",
+        "addr:street": "Somerville Avenue",
+        "amenity": "ice_cream",
+        "check_date": "2024-06-20",
+        "name": "Forge Ice Cream Bar",
+        "opening_hours": "Th-Su 15:00-21:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6114610852,
+      "lat": 42.3825055,
+      "lon": -71.1198438,
+      "tags": {
+        "addr:housenumber": "1682",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "Giulia",
+        "opening_hours": "Mo-Th 17:30-22:00; Fr-Sa 17:30-23:00",
+        "phone": "+1 617 441 2800",
+        "website": "https://www.giuliarestaurant.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6114610853,
+      "lat": 42.3824517,
+      "lon": -71.1198525,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1680",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2025-08-05",
+        "cuisine": "indian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@nirvanacambridge.com",
+        "name": "Nirvana: A Taste Of India",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 441 5566",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.nirvanacambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6114610854,
+      "lat": 42.3823952,
+      "lon": -71.1198613,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1678",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "cuisine": "new_american;farm-to-table",
+        "name": "Season To Taste",
+        "opening_hours": "Su-Th 17:00-23:00, Fr-Sa 17:00-23:30",
+        "phone": "+1 617 826 9037",
+        "website": "https://www.seasontotaste.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6114610857,
+      "lat": 42.3820714,
+      "lon": -71.1198999,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1670",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "fast_food",
+        "cuisine": "falafel;sandwich",
+        "name": "Wrapro",
+        "opening_hours": "Mo-Sa 11:00-19:30",
+        "phone": "+1 617 876 0311",
+        "website": "http://wrapro.co/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6117072054,
+      "lat": 42.3837425,
+      "lon": -71.1101036,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "622",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Somerville Avenue",
+        "amenity": "fast_food",
+        "brand": "Papa John's",
+        "brand:wikidata": "Q2759586",
+        "cuisine": "pizza",
+        "name": "Papa John's",
+        "opening_hours": "Mo-Th 10:00-02:00; Fr-Sa 10:00-03:00; Su 10:00-02:00",
+        "operator": "Papa John's",
+        "phone": "+1 617-627-9100",
+        "takeaway": "yes",
+        "website": "https://locations.papajohns.com/united-states/ma/02143/somerville/622-somerville-ave"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124468238,
+      "lat": 42.3726749,
+      "lon": -71.116863,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1288",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "branch": "Harvard Sq",
+        "brand": "Tatte Bakery & Café",
+        "brand:wikidata": "Q116671479",
+        "check_date": "2025-08-05",
+        "cuisine": "bakery;coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Tatte Bakery & Café",
+        "opening_hours": "Mo-Sa 07:00-20:00; Su 08:00-19:00",
+        "phone": "+1 617 441 4011",
+        "takeaway": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://tattebakery.com/locations/ma/cambridge/1288-massachusetts-ave/",
+        "website:menu": "https://tattebakery.com/menu/249031",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124473590,
+      "lat": 42.3727636,
+      "lon": -71.1201765,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:state": "MA",
+        "amenity": "pub",
+        "name": "Whitney's",
+        "opening_hours": "Tu-Th 15:00-22:00; Fr-Sa 12:00-01:00; Su 13:00-21:00; Mo off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124473594,
+      "lat": 42.3732683,
+      "lon": -71.1199556,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "14",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Brattle Street",
+        "amenity": "restaurant",
+        "check_date": "2025-06-26",
+        "cuisine": "mexican",
+        "email": "harvardsquare@eljefestaqueria.com",
+        "name": "El Jefe's Taqueria",
+        "opening_hours": "Mo-Su 08:00-04:00",
+        "outdoor_seating": "no",
+        "phone": "+1 617-945-1986",
+        "source": "local knowledge",
+        "website": "https://www.eljefestaqueria.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124473595,
+      "lat": 42.3725282,
+      "lon": -71.1194634,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "cuisine": "sandwich",
+        "level": "0",
+        "name": "Subway",
+        "opening_hours": "08:00-21:00",
+        "phone": "+1 617-441-0011",
+        "takeaway": "yes",
+        "website": "https://restaurants.subway.com/united-states/ma/cambridge/corner-of-mt-auburn-&-jfk-st"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124473601,
+      "lat": 42.3724842,
+      "lon": -71.1193659,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:state": "MA",
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "level": "0",
+        "name": "Le's",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124473602,
+      "lat": 42.3724155,
+      "lon": -71.1190977,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Oggi",
+        "opening_hours": "Mo-Fr 08:00-22:00; Sa 11:00-22:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124523706,
+      "lat": 42.3695516,
+      "lon": -71.1114518,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1001",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "alt_name": "Dunkin' Donuts",
+        "amenity": "fast_food",
+        "brand": "Dunkin'",
+        "brand:wikidata": "Q847743",
+        "contact:website": "https://locations.dunkindonuts.com/en/ma/cambridge/1001-massachusetts-ave/352979",
+        "cuisine": "donut;coffee_shop",
+        "drive_through": "no",
+        "name": "Dunkin'",
+        "opening_hours": "Mo-Su 05:00-19:00",
+        "phone": "+16177144242",
+        "ref": "352979",
+        "takeaway": "yes",
+        "website": "https://locations.dunkindonuts.com/en/ma/cambridge/1001-massachusetts-ave/352979",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124523708,
+      "lat": 42.3695166,
+      "lon": -71.1113392,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1001",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Harvest of India",
+        "phone": "+1 617 441 4034",
+        "website": "https://www.harvestofindiacambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124523710,
+      "lat": 42.3694961,
+      "lon": -71.111265,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1001",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "cuisine": "japanese;sushi;hotpot",
+        "name": "Flame Hot Pot & Sushi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124523718,
+      "lat": 42.3681918,
+      "lon": -71.1086529,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "906",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "cuisine": "diner",
+        "name": "Mass Ave Diner",
+        "phone": "+1 617 864 5301",
+        "website": "https://massavediner.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124562866,
+      "lat": 42.373321,
+      "lon": -71.1191042,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1380",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "brand": "Blank Street Coffee",
+        "brand:wikidata": "Q114792509",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/blank-street-coffee-cambridge",
+        "cuisine": "coffee_shop",
+        "delivery": "yes",
+        "name": "Blank Street Coffee",
+        "opening_hours": "Mo-Fr 06:30-18:00; Sa-Su 07:00-18:00",
+        "takeaway": "yes",
+        "website": "https://www.blankstreet.com/en-US/locations/boston/LXRVV62J2RA5E-massachusetts-and-dunster-st",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6268416655,
+      "lat": 42.3731187,
+      "lon": -71.1226685,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "114",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "amenity": "cafe",
+        "cuisine": "bakery;cafe",
+        "name": "Flour Bakery + Cafe",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su 08:00-18:00",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no",
+        "phone": "+1-617-714-3205",
+        "website": "https://flourbakery.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6431850886,
+      "lat": 42.3724646,
+      "lon": -71.11621,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1246",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-09-07",
+        "contact:facebook": "https://www.facebook.com/Mr-Bartleys-Burger-Cottage-70204034175/",
+        "contact:instagram": "https://www.instagram.com/mrbartleys/",
+        "contact:tiktok": "https://www.tiktok.com/@mrbartleys",
+        "contact:twitter": "https://twitter.com/mrbartleys",
+        "cuisine": "american",
+        "diet:gluten_free": "yes",
+        "diet:meat": "yes",
+        "diet:vegetarian": "yes",
+        "email": "josh.huggard@gmail.com",
+        "level": "0",
+        "name": "Mr. Bartley’s Gourmet Burgers",
+        "opening_hours": "Mo-Th 11:00-20:00; Fr-Sa 11:00-20:30; Su 11:00-17:00",
+        "phone": "+1-617-354-6559",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.mrbartley.com/",
+        "website:menu": "https://www.mrbartley.com/menu",
+        "wheelchair": "limited",
+        "wikidata": "Q116470646",
+        "wikipedia": "en:Mr. Bartley's Burger Cottage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193716,
+      "lat": 42.3734973,
+      "lon": -71.1206843,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-05-30",
+        "name": "Bluestone Lane"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193725,
+      "lat": 42.3722276,
+      "lon": -71.1229534,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Benedetto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193726,
+      "lat": 42.3728825,
+      "lon": -71.1190991,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hourly Oyster House",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193728,
+      "lat": 42.3728716,
+      "lon": -71.1200734,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "39",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "fast_food",
+        "brand": "Sweetgreen",
+        "brand:wikidata": "Q18636413",
+        "check_date": "2025-08-01",
+        "cuisine": "salad",
+        "drive_through": "no",
+        "name": "Sweetgreen",
+        "opening_hours": "Mo-Fr 09:30-23:00; Sa-Su 10:30-22:00",
+        "outdoor_seating": "no",
+        "phone": "+16179413400",
+        "takeaway": "yes",
+        "website": "https://www.sweetgreen.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193729,
+      "lat": 42.3722612,
+      "lon": -71.1209104,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tom's Bao Bao"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193730,
+      "lat": 42.3728127,
+      "lon": -71.1201295,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "35",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "ice_cream",
+        "brand": "Ben & Jerry's",
+        "brand:wikidata": "Q816412",
+        "check_date": "2025-08-01",
+        "cuisine": "ice_cream",
+        "name": "Ben & Jerry's",
+        "opening_hours": "Mo-Th 11:00-22:00, Fr-Sa 11:00-23:00, Su 11:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193732,
+      "lat": 42.3725199,
+      "lon": -71.1215377,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Falafel Corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193737,
+      "lat": 42.3736028,
+      "lon": -71.1214022,
+      "tags": {
+        "amenity": "bar",
+        "name": "Longfellow Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193739,
+      "lat": 42.3729747,
+      "lon": -71.1187857,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1350",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/pavement-coffeehouse-cambridge",
+        "cuisine": "coffee_shop",
+        "name": "Pavement Coffeehouse",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-649-6024",
+        "website": "https://pavementcoffeehouse.com/pages/harvard_sq",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193740,
+      "lat": 42.3728171,
+      "lon": -71.1188514,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "24",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Dunster Street",
+        "amenity": "restaurant",
+        "branch": "Harvard Square",
+        "cuisine": "greek",
+        "name": "Saloniki Greek",
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "phone": "+1 617-945-5074",
+        "website": "https://www.salonikigreek.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193741,
+      "lat": 42.3726081,
+      "lon": -71.1184022,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "donut",
+        "indoor_seating": "yes",
+        "name": "Blackbird Doughnuts",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193742,
+      "lat": 42.3714835,
+      "lon": -71.1168814,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:state": "MA",
+        "amenity": "cafe",
+        "brand": "Blue Bottle Coffee",
+        "brand:en": "Blue Bottle Coffee",
+        "brand:ja": "ブルーボトルコーヒー",
+        "brand:wikidata": "Q4928917",
+        "cuisine": "coffee_shop",
+        "name": "Blue Bottle Coffee",
+        "name:en": "Blue Bottle Coffee",
+        "name:ja": "ブルーボトルコーヒー",
+        "opening_hours": "Mo-Su 07:00-18:00",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285256,
+      "lat": 42.3717171,
+      "lon": -71.1211329,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "65",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "alt_name": "Dunkin' Donuts",
+        "amenity": "fast_food",
+        "brand": "Dunkin'",
+        "brand:wikidata": "Q847743",
+        "contact:website": "https://locations.dunkindonuts.com/en/ma/cambridge/65-jfk-st/330421",
+        "cuisine": "donut;coffee_shop",
+        "drive_through": "no",
+        "name": "Dunkin'",
+        "opening_hours": "Mo-Th 04:30-21:00; Fr 04:30-22:00; Sa 05:00-22:00; Su 05:00-21:00",
+        "phone": "+16173545096",
+        "ref": "330421",
+        "takeaway": "yes",
+        "website": "https://locations.dunkindonuts.com/en/ma/cambridge/65-jfk-st/330421"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285258,
+      "lat": 42.3718251,
+      "lon": -71.120591,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "56",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "restaurant",
+        "cuisine": "bagel;breakfast;coffee_shop",
+        "level": "-1",
+        "name": "Black Sheep Bagel Cafe",
+        "opening_hours": "Mo-Fr 07:00-15:00; Sa-Su 08:00-14:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-945-2189",
+        "website": "https://www.blacksheepbagelcafe.com",
+        "website:menu": "https://www.blacksheepbagelcafe.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285259,
+      "lat": 42.3689886,
+      "lon": -71.1098774,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "955",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "name": "Dado Tea",
+        "opening_hours": "Mo-Fr 08:00-16:00; Sa 09:00-15:00; Su 10:00-15:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-497-9061",
+        "website": "https://dadotea.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285260,
+      "lat": 42.3744873,
+      "lon": -71.1201243,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "29",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Church Street",
+        "amenity": "ice_cream",
+        "drive_through": "no",
+        "name": "Lizzy's Homemade Ice Cream",
+        "opening_hours": "Su-Th 12:00-21:30; Fr,Sa 12:00-22:00",
+        "phone": "+1 617-354-2911",
+        "takeaway": "only",
+        "website": "https://lizzysicecream.com/harvard-square/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285261,
+      "lat": 42.3720559,
+      "lon": -71.1204194,
+      "tags": {
+        "amenity": "ice_cream",
+        "brand": "Amorino",
+        "brand:wikidata": "Q2843884",
+        "name": "Amorino",
+        "opening_hours": "Mo-We 14:00-23:00; Th,Su 12:30-23:00; Fr,Sa 12:30-24:00",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285262,
+      "lat": 42.3720202,
+      "lon": -71.1204502,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2025-02-19",
+        "diet:vegetarian": "yes",
+        "name": "Nine Tastes",
+        "opening_hours": "Mo-Th 11:30-22:00; Fr 11:30-22:30; Sa 12:00-22:30; Su 12:00-22:00",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285263,
+      "lat": 42.3717577,
+      "lon": -71.1204234,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "latin_american",
+        "name": "Orinoco: A Latin Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7103333213,
+      "lat": 42.3705876,
+      "lon": -71.1133621,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1105",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/cafe-sushi-shoten-cambridge",
+        "cuisine": "sushi",
+        "email": "hello@cafesushicambridge.com",
+        "level": "0",
+        "name": "Cafe Sushi Shoten",
+        "opening_hours": "Tu-Sa 12:00-21:00",
+        "phone": "+1 617-492-0434",
+        "takeaway": "yes",
+        "website": "https://www.cafesushicambridge.com/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7103333216,
+      "lat": 42.3694035,
+      "lon": -71.1110078,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-07-22",
+        "name": "The Cellar",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7103333217,
+      "lat": 42.3693024,
+      "lon": -71.1107905,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "amenity": "restaurant",
+        "name": "Cafe Anthony"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7105847796,
+      "lat": 42.3790954,
+      "lon": -71.1270837,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Forage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7110645315,
+      "lat": 42.3720183,
+      "lon": -71.1208036,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Veggie Grill",
+        "brand:wikidata": "Q18636427",
+        "cuisine": "american",
+        "diet:vegan": "only",
+        "name": "Veggie Grill",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7110645317,
+      "lat": 42.3727178,
+      "lon": -71.118513,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1350",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "branch": "Harvard Square",
+        "brand": "Bon Me",
+        "brand:website": "https://www.bonmetruck.com/",
+        "cuisine": "vietnamese",
+        "name": "Bon Me",
+        "opening_hours": "Mo-Fr 10:30-20:00; Sa-Su 11:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7110645318,
+      "lat": 42.3727832,
+      "lon": -71.118741,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Whole Heart Provisions"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7110645321,
+      "lat": 42.3730507,
+      "lon": -71.1216593,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "Chip City"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7110645322,
+      "lat": 42.3722125,
+      "lon": -71.1195269,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "82",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "alt_name": "Dig Inn",
+        "amenity": "fast_food",
+        "brand": "Dig",
+        "brand:wikidata": "Q28226241",
+        "cuisine": "regional",
+        "name": "Dig",
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "phone": "+1 617-904-4340",
+        "takeaway": "yes",
+        "website": "https://www.diginn.com/kendall-square"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7855184466,
+      "lat": 42.3762106,
+      "lon": -71.1164724,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Clover Food Lab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7908278853,
+      "lat": 42.3763245,
+      "lon": -71.1042368,
+      "tags": {
+        "addr:housenumber": "70",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Beacon Street",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/ThirstyScholarPub",
+        "contact:twitter": "https://twitter.com/PubScholar",
+        "cuisine": "american",
+        "name": "Tall Order",
+        "opening_hours": "Tu-Sa 17:00-22:00",
+        "phone": "+18572140678",
+        "website": "https://www.tallorderbar.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7997267439,
+      "lat": 42.3751376,
+      "lon": -71.1027056,
+      "tags": {
+        "access": "yes",
+        "amenity": "public_bookcase",
+        "check_date": "2023-10-01",
+        "public_bookcase:type": "reading_box"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10058484417,
+      "lat": 42.3727741,
+      "lon": -71.1222731,
+      "tags": {
+        "amenity": "bar",
+        "name": "Wusong Road Tiki Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11010889241,
+      "lat": 42.3666179,
+      "lon": -71.1099073,
+      "tags": {
+        "amenity": "public_bookcase",
+        "brand": "Little Free Library",
+        "brand:wikidata": "Q6650101",
+        "lit": "no",
+        "name": "Little Free Library",
+        "public_bookcase:type": "reading_box",
+        "ref": "125336"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11010889242,
+      "lat": 42.3684016,
+      "lon": -71.1127792,
+      "tags": {
+        "amenity": "public_bookcase",
+        "brand": "Little Free Library",
+        "brand:wikidata": "Q6650101",
+        "lit": "no",
+        "name": "Little Free Library",
+        "public_bookcase:type": "reading_box",
+        "ref": "12625"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11263300637,
+      "lat": 42.3728528,
+      "lon": -71.1197184,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "24",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "cafe",
+        "check_date": "2024-08-25",
+        "name": "Capitol One Cafe",
+        "opening_hours": "Mo-Sa 7:00-19:00, Su 08:00-17:00",
+        "website": "https://www.harvardsquare.com/venue/capital-one-360-cafe/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11308059843,
+      "lat": 42.3695287,
+      "lon": -71.1121903,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1030",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-07-22",
+        "contact:instagram": "waypointharvard",
+        "cuisine": "seafood",
+        "delivery": "yes",
+        "delivery:url": "https://www.toasttab.com/local/order/waypoint-n-a/",
+        "email": "info@waypointharvard.com",
+        "name": "Waypoint",
+        "opening_hours": "Tu-Th 17:00-22:00; Fr-Sa 17:00-23:00",
+        "opening_hours:url": "https://www.waypointharvard.com/#contact",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-864-2300",
+        "reservation:website": "https://www.opentable.com/r/waypoint-cambridge",
+        "website": "https://www.waypointharvard.com/",
+        "website:menu": "https://www.waypointharvard.com/#menus",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11308059845,
+      "lat": 42.3739117,
+      "lon": -71.112954,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "468",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Broadway",
+        "amenity": "cafe",
+        "branch": "Broadway Marketplace",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "internet_access": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "05:00-21:00",
+        "phone": "+1 617-491-9911",
+        "ref": "12268",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/12268/broadway-marketplace-468-broadway-cambridge-ma-021383908-us"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516224623,
+      "lat": 42.3733419,
+      "lon": -71.1092272,
+      "tags": {
+        "amenity": "public_bookcase"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11731617060,
+      "lat": 42.3789325,
+      "lon": -71.1067425,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "147",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Beacon Street",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "description": "A small local restaurant offering pizza, calzones, subs, and more.",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Beacon Street Pizza",
+        "outdoor_seating": "yes",
+        "phone": "+1 617-868-6100",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11933532869,
+      "lat": 42.3780598,
+      "lon": -71.1062842,
+      "tags": {
+        "addr:housenumber": "118",
+        "addr:postcode": "02143",
+        "addr:street": "Beacon Street",
+        "amenity": "restaurant",
+        "brunch": "Sa-Su 10:00-15:00",
+        "contact:facebook": "https://www.facebook.com/people/Caf%C3%A9-Saint-Germain/61573023902896/",
+        "contact:instagram": "saintgermainbistro",
+        "cuisine": "french;bakery",
+        "email": "loiclg@comcast.net",
+        "happy_hours": "16:00-18:00",
+        "name": "Café Saint-Germain",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "opening_hours:url": "https://cafesaintgermain.com/#contact_v3",
+        "phone": "+16177640171",
+        "reservation:website": "https://www.opentable.com/r/prb-cafe-st-germain-somerville",
+        "website": "https://cafesaintgermain.com/",
+        "website:menu": "https://cafesaintgermain.com/food-menu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12052439259,
+      "lat": 42.3711977,
+      "lon": -71.1146057,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "3",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Arrow Street",
+        "amenity": "ice_cream",
+        "check_date": "2025-09-07",
+        "contact:facebook": "https://www.facebook.com/theberryline/",
+        "contact:instagram": "https://www.instagram.com/theberryline",
+        "contact:linkedin": "https://www.linkedin.com/company/berryline",
+        "contact:twitter": "https://www.twitter.com/berryline",
+        "contact:yelp": "https://www.yelp.com/biz/berryline-cambridge",
+        "facebook": "https://www.facebook.com/theberryline/",
+        "name": "BerryLine",
+        "opening_hours": "Mo-Fr 13:00-23:00; Sa-Su 12:00-23:00",
+        "outdoor_seating": "no",
+        "phone": "+1-617-575-9628; +1-617-868-3500",
+        "start_date": "2007-09-15",
+        "twitter": "https://www.twitter.com/berryline",
+        "website": "https://berryline.com/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12053269221,
+      "lat": 42.3722616,
+      "lon": -71.1158899,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1230",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/the-friendly-toast-cambridge-cambridge-2",
+        "cuisine": "breakfast;brunch",
+        "level": "0",
+        "name": "The Friendly Toast",
+        "opening_hours": "Mo-Fr 07:30-14:30; Sa 07:30-20:00; Su 07:30-17:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-841-3338",
+        "reservation": "yes",
+        "website": "https://www.thefriendlytoast.com/cambridge-ma",
+        "website:menu": "https://www.thefriendlytoast.com/files/final-spring25menu-noprices-pdf.pdf",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12053339273,
+      "lat": 42.3735556,
+      "lon": -71.1194963,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "3",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Brattle Street",
+        "amenity": "fast_food",
+        "check_date": "2025-06-26",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "drive_through": "no",
+        "name": "Joe's Pizza",
+        "opening_hours": "Su-We 10:00-02:00; Th-Sa 10:00-03:00",
+        "phone": "+1-857-226-4942",
+        "website": "https://www.joespizzacambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12079223523,
+      "lat": 42.371266,
+      "lon": -71.1147192,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "5",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Arrow Street",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "check_date": "2025-09-07",
+        "contact:instagram": "https://www.instagram.com/faro__cafe/",
+        "contact:yelp": "https://www.yelp.com/biz/faro-cambridge-2",
+        "cuisine": "coffee_shop",
+        "name": "Faro Cafe",
+        "opening_hours": "Mo-Th,Su 08:00-16:00; Fr-Sa 08:00-22:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12096267845,
+      "lat": 42.3713068,
+      "lon": -71.114636,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1160",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "brand": "Kung Fu Tea",
+        "brand:wikidata": "Q66023886",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/kung-fu-tea-cambridge",
+        "cuisine": "bubble_tea",
+        "name": "Kung Fu Tea",
+        "opening_hours": "Su-Th 11:00-22:00; Fr-Sa 11:00-23:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-714-5055",
+        "takeaway": "yes",
+        "website": "https://www.kungfutea.com/location/?l=harvard-sq--20425920",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103017251,
+      "lat": 42.3750291,
+      "lon": -71.1100918,
+      "tags": {
+        "amenity": "public_bookcase",
+        "lit": "no",
+        "name": "Free Little Library",
+        "public_bookcase:type": "wooden_cabinet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12136739125,
+      "lat": 42.3729665,
+      "lon": -71.1196344,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "22",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "cafe",
+        "check_date": "2024-08-25",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Life Alive Organic Cafe",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "website": "https://www.lifealive.com/location/harvard-square"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12136800730,
+      "lat": 42.3729652,
+      "lon": -71.1199819,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "15",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "fast_food",
+        "check_date": "2025-08-01",
+        "cuisine": "donut",
+        "name": "Union Square Donuts",
+        "opening_hours": "Mo-Sa 07:00-22:00, Su 07:00-20:00",
+        "phone": "+1-617-209-2257",
+        "website": "https://www.unionsquaredonuts.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12162402369,
+      "lat": 42.3814174,
+      "lon": -71.1220729,
+      "tags": {
+        "amenity": "public_bookcase"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12209833537,
+      "lat": 42.3740268,
+      "lon": -71.125103,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "148",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "amenity": "cafe",
+        "cuisine": "sandwich;coffee_shop",
+        "name": "Luxor Cafe",
+        "opening_hours": "Mo-Th 07:00-20:00; Fr 07:00-22:00; Sa 08:00-22:00; Su 08:00-21:00",
+        "phone": "+1-617-661-0904",
+        "website": "https://luxorcafee.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12405075948,
+      "lat": 42.3834644,
+      "lon": -71.1251658,
+      "tags": {
+        "amenity": "public_bookcase"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752349640,
+      "lat": 42.3831234,
+      "lon": -71.1160519,
+      "tags": {
+        "addr:housenumber": "102;104",
+        "addr:street": "Oxford Street",
+        "amenity": "cafe",
+        "check_date": "2025-04-13",
+        "cuisine": "coffee_shop",
+        "name": "Little Crepe Cafe",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-19:00; Sa-Su 11:00-16:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752572579,
+      "lat": 42.374526,
+      "lon": -71.1200301,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "cuisine": "breakfast;pizza",
+        "name": "Source",
+        "opening_hours": "Mo-Th 12:00-22:00; Fr 12:00-23:00; Sa 11:00-23:00; Su 11:00-22:00",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "smoking": "no",
+        "toilets": "yes",
+        "toilets:access": "private",
+        "toilets:charge": "3 USD",
+        "toilets:fee": "yes",
+        "toilets:fee:conditional": "no @ customers",
+        "website": "https://sourcerestaurants.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12878271389,
+      "lat": 42.3721709,
+      "lon": -71.1207789,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "57",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "The Maharaja",
+        "opening_hours": "Mo-Su 12:00-22:00",
+        "phone": "+16175472757",
+        "website": "https://maharajaboston.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12884578597,
+      "lat": 42.3708297,
+      "lon": -71.1136523,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/chef-zhang-cuisine-and-bar-cambridge",
+        "cuisine": "chinese",
+        "level": "-1",
+        "name": "Chef Zhang Cuisine & Bar",
+        "opening_hours": "Tu-Su 11:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12884596037,
+      "lat": 42.3707991,
+      "lon": -71.1136223,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1105",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/beyond-full-cambridge",
+        "cuisine": "breakfast;brunch;burger",
+        "email": "support@beyondfull.net",
+        "name": "Beyond Full",
+        "phone": "+1-617-665-5490",
+        "website": "https://beyondfull.net/",
+        "website:menu": "https://beyondfull.net/menu/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12944147838,
+      "lat": 42.3677165,
+      "lon": -71.1079316,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "878",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "indoor_seating": "yes",
+        "name": "Tanjore Bar and Restaurant",
+        "outdoor_seating": "no",
+        "website:menu": "https://www.tanjorecambridgema.com/vn57bl35/restaurant/order-online"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12960299665,
+      "lat": 42.3778469,
+      "lon": -71.107841,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "Jamie's",
+        "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13007797307,
+      "lat": 42.374301,
+      "lon": -71.1202484,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "32",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Church Street",
+        "amenity": "restaurant",
+        "check_date": "2025-08-05",
+        "cuisine": "mexican",
+        "name": "The Painted Burro",
+        "opening_hours": "Mo-Th 16:00-22:00; Fr 11:30-23:00; Sa 10:00-23:00; Su 10:00-22:00",
+        "phone": "+1-857-259-6455",
+        "website": "https://www.thepaintedburro.com/location/painted-burro-harvard-square/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13010237369,
+      "lat": 42.3801422,
+      "lon": -71.1196237,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-07-16",
+        "cuisine": "pizza",
+        "name": "Stoked Pizza Co"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13042212731,
+      "lat": 42.3753082,
+      "lon": -71.1124911,
+      "tags": {
+        "amenity": "public_bookcase"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13115425534,
+      "lat": 42.3783225,
+      "lon": -71.1068992,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "425",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Washington Street",
+        "amenity": "restaurant",
+        "cuisine": "jewish",
+        "name": "Lehrhaus",
+        "opening_hours": "Su-Th 16:30-21:30",
+        "website": "https://lehr.haus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13124132937,
+      "lat": 42.3720356,
+      "lon": -71.1183317,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "71",
+        "addr:postcode": "02138-4961",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "amenity": "fast_food",
+        "brand": "Playa Bowls",
+        "brand:wikidata": "Q114618507",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/playa-bowls-cambridge-3",
+        "cuisine": "açaí",
+        "level": "0",
+        "name": "Playa Bowls",
+        "opening_hours": "08:00-22:00",
+        "phone": "+1-617-714-5321",
+        "takeaway": "yes",
+        "website": "https://playabowls.com/location/harvard-square",
+        "website:menu": "https://playabowls.com/menu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13145115799,
+      "lat": 42.367858,
+      "lon": -71.1134214,
+      "tags": {
+        "amenity": "public_bookcase",
+        "public_bookcase:type": "reading_box"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13205764926,
+      "lat": 42.3792321,
+      "lon": -71.1073871,
+      "tags": {
+        "amenity": "public_bookcase"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13271173725,
+      "lat": 42.3818417,
+      "lon": -71.1194606,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Pavement Coffeehouse"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13302185356,
+      "lat": 42.3646636,
+      "lon": -71.113246,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bista Pasta Trattoria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13305464501,
+      "lat": 42.3726153,
+      "lon": -71.1196899,
+      "tags": {
+        "addr:housenumber": "36",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "ice_cream",
+        "contact:instagram": "kyoyohaus",
+        "level": "0",
+        "name": "Kyōyo Haus",
+        "website": "https://kyoyohaus.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29516370,
+      "center": {
+        "lat": 42.3820747,
+        "lon": -71.1113163
+      },
+      "nodes": [
+        325369573,
+        325369574,
+        325369575,
+        325369576,
+        325369577,
+        325369578,
+        325369573
+      ],
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "244",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Beacon Street",
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date:opening_hours": "2025-11-15",
+        "delivery": "no",
+        "name": "P & K Delicatessen",
+        "opening_hours:signed": "no",
+        "phone": "+1-617-868-0772",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29635325,
+      "center": {
+        "lat": 42.3835247,
+        "lon": -71.1198796
+      },
+      "nodes": [
+        326189147,
+        326193602,
+        326178434,
+        326183326,
+        326189147
+      ],
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1712",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "chinese",
+        "indoor_seating": "yes",
+        "name": "Changsho",
+        "outdoor_seating": "no",
+        "phone": "+1 617 547 6565",
+        "website": "https://changshorestaurant.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29826025,
+      "center": {
+        "lat": 42.3726793,
+        "lon": -71.1179528
+      },
+      "nodes": [
+        327518881,
+        328603331,
+        10865565640,
+        12133141060,
+        328612777,
+        10865565641,
+        327543903,
+        328597695,
+        328628547,
+        327518881
+      ],
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "8",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Holyoke Street",
+        "amenity": "restaurant",
+        "building": "commercial",
+        "check_date": "2024-08-22",
+        "cuisine": "barbecue",
+        "name": "The Smoke Shop",
+        "opening_hours": "Mo-Th 11:30-21:00, Fr-Sa 11:30-22:00, Su 11:30-20:00",
+        "phone": "+1 617-547-7427",
+        "website": "https://thesmokeshopbbq.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 570547996,
+      "center": {
+        "lat": 42.3835653,
+        "lon": -71.1131722
+      },
+      "nodes": [
+        5485413397,
+        5485413398,
+        5485413399,
+        5485413400,
+        5485413401,
+        5485413397
+      ],
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "300",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Beacon Street",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "hawaiian",
+        "delivery": "yes",
+        "name": "Manoa Poke Shop",
+        "opening_hours": "Fr,Sa 15:00-20:30; We 17:00-20:30; Th 16:30-20:30",
+        "outdoor_seating": "no",
+        "phone": "+1-617-945-1042",
+        "takeaway": "yes",
+        "website": "https://manoa.fish/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 570547997,
+      "center": {
+        "lat": 42.3835218,
+        "lon": -71.1131087
+      },
+      "nodes": [
+        5485413402,
+        5485413403,
+        5485413401,
+        5485413400,
+        5485413402
+      ],
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "296-298",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Beacon Street",
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date:opening_hours": "2025-11-15",
+        "cuisine": "chinese",
+        "delivery": "yes",
+        "name": "Zoe's",
+        "opening_hours": "Tu-Th,Su 11:30-21:00; Fr,Sa 11:30-22:00",
+        "outdoor_seating": "no",
+        "phone": "+1-617-864-6265",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "http://www.zoeschinese.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 570547998,
+      "center": {
+        "lat": 42.3836582,
+        "lon": -71.112725
+      },
+      "nodes": [
+        5485413405,
+        5485413406,
+        5485413407,
+        327457813,
+        5485413405
+      ],
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "289",
+        "addr:postcode": "02143",
+        "addr:state": "MA",
+        "addr:street": "Beacon Street",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "asian;thai;vietnamese",
+        "delivery": "yes",
+        "name": "Pho 'n Rice",
+        "opening_hours": "Mo-Th 11:00-15:00,16:00-21:00; Fr,Sa 11:00-15:00,16:00-21:30; Su 12:00-15:00,16:00-21:00",
+        "outdoor_seating": "no",
+        "phone": "+1 617 864 8888",
+        "takeaway": "yes",
+        "website": "https://www.phoandrice.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064085014,
+      "center": {
+        "lat": 42.3723609,
+        "lon": -71.1160251
+      },
+      "nodes": [
+        9773125721,
+        9773125730,
+        9773125731,
+        9773125732,
+        12325317468,
+        9773125720,
+        12325317469,
+        12325317470,
+        12325317471,
+        12325317472,
+        9773125721
+      ],
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1238",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "restaurant",
+        "building": "retail",
+        "building:levels": "3",
+        "check_date": "2025-09-07",
+        "contact:facebook": "https://www.facebook.com/hongkongrestaurant",
+        "contact:instagram": "http://instagram.com/hongkongcambridge",
+        "contact:twitter": "https://twitter.com/hongkongharvard",
+        "contact:yelp": "https://www.yelp.com/biz/hong-kong-restaurant-cambridge",
+        "cuisine": "chinese",
+        "delivery": "yes",
+        "name": "Hong Kong",
+        "opening_hours": "Mo off; Tu-We,Su 12:00-20:00; Th 12:00-22:00; Fr-Sa 12:00-23:00",
+        "phone": "+1 617-864-5311",
+        "website": "https://www.hongkongharvard.com",
+        "website:menu": "https://www.hongkongharvard.com/menus/",
+        "wheelchair": "yes",
+        "wikidata": "Q120336680"
+      }
+    }
+  ]
+}
