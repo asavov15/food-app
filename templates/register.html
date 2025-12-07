@@ -1,17 +1,27 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>Register</h2>
 
-<form action="/register" method="POST">
-  <label>Username:</label><br>
-  <input type="text" name="username" required><br><br>
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2 class="card-title">Create an account</h2>
+      <p class="card-subtitle">Save favorites and write reviews on HarvardEats.</p>
+    </div>
+  </div>
 
-  <label>Password:</label><br>
-  <input type="password" name="password" required><br><br>
+  <form action="/register" method="POST">
+    <label>Username</label>
+    <input type="text" name="username" required>
 
-  <button type="submit">Create account</button>
-</form>
+    <label class="mt-2">Password</label>
+    <input type="password" name="password" required>
 
-<p>Already have an account? <a href="/login">Log in</a></p>
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary">Create account</button>
+      <a href="/login" class="btn btn-outline">Already have an account?</a>
+    </div>
+  </form>
+</div>
+
 {% endblock %}

@@ -1,4 +1,3 @@
-/* ===== Base + Theme ===== */
 
 :root {
   --crimson: #a51c30;
@@ -16,6 +15,11 @@
   --transition-fast: 0.2s ease;
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
     "Helvetica Neue", Arial, sans-serif;
+
+  --harvard-crimson: var(--crimson);
+  --harvard-crimson-dark: var(--dark-crimson);
+  --bg-card: var(--background-card);
+  --border-subtle: var(--faded-border);
 }
 
 /* Basic reset-ish */
@@ -35,77 +39,121 @@ body {
 
 body {
   font-family: var(--font-sans);
-  background: radial-gradient(circle at top left, #ffffff 0, #f4f4f8 45%, #eaedf5 100%);
+  background: radial-gradient(
+    circle at top left,
+    #ffffff 0,
+    #f4f4f8 45%,
+    #eaedf5 100%
+  );
   color: var(--text-main);
   -webkit-font-smoothing: antialiased;
 }
+
+/************ HEADER + NAV BAR ************/
 
 header {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(189, 5, 5, 0.96);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  background: var(--crimson);
+  box-shadow: var(--shadow-soft);
 }
 
 /* Wrap header content to center on page */
-header > * {
+.nav-wrapper {
   max-width: var(--max-width);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-/* Make header content vertical stack */
-header {
-  padding: 0.7rem 1rem 0.9rem;
+/* Left: seal + name */
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+.nav-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+.brand-name {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--harvard-crimson-dark);
 }
 
-/* ===== Nav + Auth Links ===== */
-
-nav {
-  margin-top: 0.4rem;
-  font-size: 0.9rem;
+/* Center nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 0; /* override any generic nav margin */
 }
 
-/* Style nav links (Home | Spots | Add Spot) */
-nav a {
+.nav-links a {
   text-decoration: none;
-  color: var(--text-muted);
-  padding: 0.2rem 0.4rem;
+  color: #fff;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 4px 10px;
   border-radius: var(--radius-pill);
-  transition: background var(--transition-fast), color var(--transition-fast),
+  transition:
+    background var(--transition-fast),
+    opacity var(--transition-fast),
     transform var(--transition-fast);
 }
 
-nav a:hover {
-  background: rgba(0, 0, 0, 0.04);
-  color: var(--text-main);
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  opacity: 0.92;
   transform: translateY(-1px);
 }
 
-/* Style the login/register / user bar */
-header > div a {
-  text-decoration: none;
-  color: var(--harvard-crimson-dark);
-  font-size: 0.86rem;
-  padding: 0.15rem 0.35rem;
-  border-radius: var(--radius-pill);
-  transition: background var(--transition-fast), color var(--transition-fast);
+/* Right: auth / user links */
+.auth-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  color: #fff;
+  font-size: 0.9rem;
 }
 
-header > div a:hover {
-  background: rgba(165, 28, 48, 0.1);
+.auth-links a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: var(--radius-pill);
+  transition:
+    background var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.auth-links a:hover {
+  background: rgba(0, 0, 0, 0.18);
+  opacity: 0.9;
+}
+
+.user-label {
+  font-weight: 600;
+  color: #ffe5e5;
+  margin-right: 2px;
+}
+
+.divider {
+  opacity: 0.7;
 }
 
 /* ===== Main Content ===== */
@@ -171,8 +219,11 @@ main p {
   color: var(--text-main);
   cursor: pointer;
   text-decoration: none;
-  transition: background var(--transition-fast), box-shadow var(--transition-fast),
-    transform var(--transition-fast), border-color var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 .btn:hover {
@@ -182,13 +233,21 @@ main p {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--harvard-crimson), var(--harvard-crimson-dark));
+  background: linear-gradient(
+    135deg,
+    var(--harvard-crimson),
+    var(--harvard-crimson-dark)
+  );
   color: #ffffff;
   border-color: transparent;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--harvard-crimson-dark), #430911);
+  background: linear-gradient(
+    135deg,
+    var(--harvard-crimson-dark),
+    #430911
+  );
   box-shadow: 0 10px 22px rgba(165, 28, 48, 0.35);
 }
 
@@ -212,8 +271,11 @@ main p {
   font-size: 0.78rem;
   color: var(--text-muted);
   cursor: pointer;
-  transition: background var(--transition-fast), border var(--transition-fast),
-    color var(--transition-fast), transform var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    border var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .btn-chip:hover {
@@ -253,7 +315,9 @@ select {
   font-size: 0.9rem;
   outline: none;
   background: #ffffff;
-  transition: border var(--transition-fast), box-shadow var(--transition-fast);
+  transition:
+    border var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 textarea {
@@ -283,7 +347,6 @@ select:focus {
 
 /* ===== Spots + Lists ===== */
 
-/* Generic list of spots (links) */
 .spot-list {
   list-style: none;
   padding: 0;
@@ -297,7 +360,9 @@ select:focus {
   background: #ffffff;
   border: 1px solid var(--border-subtle);
   box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
     background var(--transition-fast);
 }
 
@@ -313,20 +378,30 @@ select:focus {
   background: #fafafa;
 }
 
-/* Small text under spot name */
 .spot-meta {
   font-size: 0.82rem;
   color: var(--text-muted);
 }
 
-/* ===== Map container (for #map div) ===== */
+/* ===== Map containers ===== */
 
 #map {
   width: 100%;
-  height: 380px; /* adjust as needed */
+  height: 380px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+#spots-map {
+  width: 100%;
+  height: 380px;
+  min-height: 320px;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid #e2e2ec;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
   overflow: hidden;
 }
 
@@ -369,46 +444,190 @@ tr:nth-child(even) td {
   color: var(--harvard-crimson-dark);
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.mb-4 { margin-bottom: 1rem; }
+
+/* ===== Home page bits (optional) ===== */
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
-.mt-2 {
+
+.home-title {
+  font-size: 2rem;
+  margin: 0 0 0.3rem;
+}
+
+.home-intro {
+  margin: 0.25rem 0 0.75rem;
+  color: var(--text-main);
+}
+
+.home-actions .btn {
+  margin: 0 0.25rem;
+}
+
+.home-spots {
   margin-top: 0.5rem;
 }
-.mt-3 {
-  margin-top: 0.75rem;
-}
-.mt-4 {
-  margin-top: 1rem;
+
+.spot-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
 }
 
-.mb-1 {
+.spot-name-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.spot-name-link:hover {
+  color: var(--harvard-crimson-dark);
+}
+
+/* tags under each spot */
+.tags {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(165, 28, 48, 0.08);
+  color: var(--harvard-crimson-dark);
+}
+/* ===== Spot detail / reviews ===== */
+
+.spot-summary-rating {
+  text-align: right;
+}
+
+.rating-badge {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 0.15rem;
+  font-weight: 700;
+}
+
+.rating-value {
+  font-size: 1.3rem;
+}
+
+.rating-star {
+  color: #fbbf24;
+  font-size: 1.1rem;
+}
+
+.spot-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Reviews list */
+.review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review-item {
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.25rem;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
+
+.rating-pill {
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(165, 28, 48, 0.1);
+  color: var(--harvard-crimson-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
-#spots-map {
-  width: 100%;              
-  height: 380px;            
-  min-height: 320px;        
-  display: block;           
-  border-radius: 16px;     
-  border: 1px solid #e2e2ec;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08); 
-  overflow: hidden;        
+.review-user {
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
-.harvard_seal {
-  height: 32px;        
-  width: auto;
-  vertical-align: middle;
-  margin-right: 8px;   
+.review-text {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Manage buttons layout */
+.manage-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Danger-style button for delete */
+.btn-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+.btn-danger:hover {
+  background: #fecaca;
+}
+/* ===== Add Spot form tweaks ===== */
+
+.tag-fieldset {
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  padding: 0.75rem 1rem 0.85rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.tag-fieldset legend {
+  padding: 0 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.tag-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.25rem;
+}
+
+.tag-check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.tag-check input[type="checkbox"] {
+  transform: translateY(1px);
 }

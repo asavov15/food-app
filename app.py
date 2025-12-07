@@ -87,22 +87,22 @@ def get_db():
 def index():
     db = get_db()
     spots = db.execute(
-        """
-        SELECT
-            id,
-            name,
-            category,
-            late_night,
-            fine_dining,
-            health_conscious,
-            affordable,
-            sweet_treat,
-            close
+    """
+    SELECT
+        spots.id,
+        spots.name,
+        spots.category,
+        ROUND(AVG(reviews.rating), 1) AS avg_rating,
+        COUNT(reviews.id) AS review_count
         FROM spots
-        ORDER BY id DESC
+        LEFT JOIN reviews ON reviews.spot_id = spots.id
+        GROUP BY spots.id
+        HAVING review_count > 0      -- ensures only reviewed places rank
+        ORDER BY avg_rating DESC, review_count DESC
         LIMIT 5
-        """
-    ).fetchall()
+    """
+).fetchall()
+
     db.close()
     return render_template("index.html", spots=spots)
 

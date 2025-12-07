@@ -1,56 +1,71 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>Add a New Spot</h2>
 
-<form action="/add-spot" method="POST">
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2 class="card-title">Add a New Spot</h2>
+      <p class="card-subtitle">Share a restaurant, cafe, or late-night favorite around Harvard.</p>
+    </div>
+  </div>
 
-  <label>Name:</label><br>
-  <input type="text" name="name" required><br><br>
+  <form action="/add-spot" method="POST">
 
-  <label>Category:</label><br>
-  <input type="text" name="category"><br><br>
+    <label>Name</label>
+    <input type="text" name="name" required>
 
-  <label>Latitude:</label><br>
-  <input type="number" step="0.000001" name="latitude"><br><br>
+    <label class="mt-2">Category</label>
+    <input type="text" name="category" placeholder="Restaurant, Cafe, Fast Food, etc.">
 
-  <label>Longitude:</label><br>
-  <input type="number" step="0.000001" name="longitude"><br><br>
+    <label class="mt-2">Latitude</label>
+    <input type="number" step="0.000001" name="latitude">
 
-  <!-- NEW SECTION: TAGS -->
-  <fieldset>
-    <legend>Tags</legend>
+    <label class="mt-2">Longitude</label>
+    <input type="number" step="0.000001" name="longitude">
 
-    <label>
-      <input type="checkbox" name="late_night" value="1">
-      Late Night Eats (open until 1am)
-    </label><br>
+    <!-- TAGS -->
+    <fieldset class="tag-fieldset mt-3">
+      <legend>Tags</legend>
 
-    <label>
-      <input type="checkbox" name="fine_dining" value="1">
-      Fine Dining
-    </label><br>
+      <div class="tag-checkboxes">
+        <label class="tag-check">
+          <input type="checkbox" name="late_night" value="1">
+          <span>Late Night Eats (open until 1am)</span>
+        </label>
 
-    <label>
-      <input type="checkbox" name="health_conscious" value="1">
-      Health Conscious
-    </label><br>
+        <label class="tag-check">
+          <input type="checkbox" name="fine_dining" value="1">
+          <span>Fine Dining</span>
+        </label>
 
-    <label>
-      <input type="checkbox" name="affordable" value="1">
-      Affordable
-    </label><br>
+        <label class="tag-check">
+          <input type="checkbox" name="health_conscious" value="1">
+          <span>Health Conscious</span>
+        </label>
 
-    <label>
-      <input type="checkbox" name="sweet_treat" value="1">
-      Sweet Treat
-    </label><br>
-  </fieldset>
-  <br>
+        <label class="tag-check">
+          <input type="checkbox" name="affordable" value="1">
+          <span>Affordable</span>
+        </label>
 
-  <button type="submit">Create Spot</button>
-</form>
+        <label class="tag-check">
+          <input type="checkbox" name="sweet_treat" value="1">
+          <span>Sweet Treat</span>
+        </label>
+      </div>
+    </fieldset>
 
-<br>
-<a href="/spots">Back to all spots</a>
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary">Create spot</button>
+      <a href="/spots" class="btn btn-outline">Cancel</a>
+    </div>
+
+  </form>
+</div>
+
+<p class="mt-3">
+  <a href="/spots" class="btn btn-outline">Back to all spots</a>
+</p>
+
 {% endblock %}

@@ -1,128 +1,163 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>All Food Spots</h2>
 
-<form method="GET" action="/spots">
-  <label>Search (name or category):</label>
-  <input
-    type="text"
-    name="q"
-    value="{{ request.args.get('q', '') }}"
-  >
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2 class="card-title">All Food Spots</h2>
+      <p class="card-subtitle">Search, filter, and explore every spot near Harvard.</p>
+    </div>
+  </div>
 
-  <label>Min rating:</label>
-  <input
-    type="number"
-    name="min_rating"
-    min="1"
-    max="5"
-    step="0.1"
-    value="{{ request.args.get('min_rating', '') }}"
-  >
+  <form method="GET" action="/spots">
+    <label>Search (name or category):</label>
+    <input
+      type="text"
+      name="q"
+      value="{{ request.args.get('q', '') }}"
+    >
 
-  <fieldset>
-    <legend>Filter by tags:</legend>
+    <label>Min rating:</label>
+    <input
+      type="number"
+      name="min_rating"
+      min="1"
+      max="5"
+      step="0.1"
+      value="{{ request.args.get('min_rating', '') }}"
+    >
 
-    <label>
-      <input
-        type="checkbox"
-        name="late_night"
-        value="1"
-        {% if request.args.get('late_night') %}checked{% endif %}
-      >
-      Late Night
-    </label>
+    <fieldset>
+      <legend>Filter by tags:</legend>
 
-    <label>
-      <input
-        type="checkbox"
-        name="fine_dining"
-        value="1"
-        {% if request.args.get('fine_dining') %}checked{% endif %}
-      >
-      Fine Dining
-    </label>
+      <label>
+        <input
+          type="checkbox"
+          name="late_night"
+          value="1"
+          {% if request.args.get('late_night') %}checked{% endif %}
+        >
+        Late Night
+      </label>
 
-    <label>
-      <input
-        type="checkbox"
-        name="health_conscious"
-        value="1"
-        {% if request.args.get('health_conscious') %}checked{% endif %}
-      >
-      Health Conscious
-    </label>
+      <label>
+        <input
+          type="checkbox"
+          name="fine_dining"
+          value="1"
+          {% if request.args.get('fine_dining') %}checked{% endif %}
+        >
+        Fine Dining
+      </label>
 
-    <label>
-      <input
-        type="checkbox"
-        name="affordable"
-        value="1"
-        {% if request.args.get('affordable') %}checked{% endif %}
-      >
-      Affordable
-    </label>
+      <label>
+        <input
+          type="checkbox"
+          name="health_conscious"
+          value="1"
+          {% if request.args.get('health_conscious') %}checked{% endif %}
+        >
+        Health Conscious
+      </label>
 
-    <label>
-      <input
-        type="checkbox"
-        name="sweet_treat"
-        value="1"
-        {% if request.args.get('sweet_treat') %}checked{% endif %}
-      >
-      Sweet Treat
-    </label>
+      <label>
+        <input
+          type="checkbox"
+          name="affordable"
+          value="1"
+          {% if request.args.get('affordable') %}checked{% endif %}
+        >
+        Affordable
+      </label>
 
-    <label>
-      <input
-        type="checkbox"
-        name="close"
-        value="1"
-        {% if request.args.get('close') %}checked{% endif %}
-      >
-      Close to Harvard Yard
-    </label>
-  </fieldset>
+      <label>
+        <input
+          type="checkbox"
+          name="sweet_treat"
+          value="1"
+          {% if request.args.get('sweet_treat') %}checked{% endif %}
+        >
+        Sweet Treat
+      </label>
 
-  <button type="submit">Apply</button>
-  <a href="/spots">Clear</a>
-</form>
+      <label>
+        <input
+          type="checkbox"
+          name="close"
+          value="1"
+          {% if request.args.get('close') %}checked{% endif %}
+        >
+        Close to Harvard Yard
+      </label>
+    </fieldset>
 
+    <button type="submit" class="btn btn-primary">Apply</button>
+    <a href="/spots" class="btn btn-outline">Clear</a>
+  </form>
+</div>
 
-<!-- Map container -->
-<div id="spots-map" data-spots='{{ spot_data | tojson | safe }}'></div>
+<div class="card" style="margin-top: 1rem;">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Map view</h3>
+      <p class="card-subtitle">Click a marker to open the spot page.</p>
+    </div>
+  </div>
 
-{% if spots %}
-  <ul>
-    {% for spot in spots %}
-      <li>
-        <a href="/spot/{{ spot['id'] }}">{{ spot["name"] }}</a>
-        {% if spot["category"] %} ({{ spot["category"] }}) {% endif %}
+  <!-- Map container -->
+  <div id="spots-map" data-spots='{{ spot_data | tojson | safe }}'></div>
+</div>
 
-        {% if spot["avg_rating"] is not none %}
-         – {{ spot["avg_rating"] }}★
-          ({{ spot["review_count"] }} review{% if spot["review_count"] != 1 %}s{% endif %})
-        {% else %}
-          – No reviews yet
-        {% endif %}
+<div class="card" style="margin-top: 1rem;">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Spot list</h3>
+      <p class="card-subtitle">All spots that match your filters.</p>
+    </div>
+  </div>
 
-        <!-- TAGS -->
-        <div class="tags">
-          {% if spot.late_night %}<span class="tag">Late Night</span>{% endif %}
-          {% if spot.fine_dining %}<span class="tag">Fine Dining</span>{% endif %}
-          {% if spot.health_conscious %}<span class="tag">Health Conscious</span>{% endif %}
-          {% if spot.affordable %}<span class="tag">Affordable</span>{% endif %}
-          {% if spot.sweet_treat %}<span class="tag">Sweet Treat</span>{% endif %}
-          {% if spot.close %}<span class="tag">Close to Harvard Yard</span>{% endif %}
-        </div>
-      </li>
-    {% endfor %}
+  {% if spots %}
+    <ul class="spot-list">
+      {% for spot in spots %}
+        <li class="spot-item">
+          <div class="spot-item-row">
+            <div>
+              <a href="/spot/{{ spot['id'] }}" class="spot-name-link">
+                {{ spot["name"] }}
+              </a>
+              {% if spot["category"] %}
+                <div class="spot-meta">
+                  {{ spot["category"] }}
+                </div>
+              {% endif %}
+            </div>
 
-  </ul>
-{% else %}
-  <p>No spots match your search.</p>
-{% endif %}
+            <div class="spot-meta">
+              {% if spot["avg_rating"] is not none %}
+                ★ {{ spot["avg_rating"] }}
+                ({{ spot["review_count"] }} review{% if spot["review_count"] != 1 %}s{% endif %})
+              {% else %}
+                No reviews yet
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="tags">
+            {% if spot.late_night %}<span class="tag">Late Night</span>{% endif %}
+            {% if spot.fine_dining %}<span class="tag">Fine Dining</span>{% endif %}
+            {% if spot.health_conscious %}<span class="tag">Health Conscious</span>{% endif %}
+            {% if spot.affordable %}<span class="tag">Affordable</span>{% endif %}
+            {% if spot.sweet_treat %}<span class="tag">Sweet Treat</span>{% endif %}
+            {% if spot.close %}<span class="tag">Close to Harvard Yard</span>{% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No spots match your search.</p>
+  {% endif %}
+</div>
 
 {% endblock %}
 
@@ -139,7 +174,6 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Read JSON from the data attribute
     const spotsJson = mapDiv.dataset.spots;
     let spots = [];
 
@@ -149,7 +183,6 @@
       console.error("Failed to parse spot data", e);
     }
 
-    // Add markers
     spots.forEach(function (s) {
       if (s.latitude && s.longitude) {
         const marker = L.marker([s.latitude, s.longitude]).addTo(map);
@@ -164,16 +197,11 @@
           popup += "<br>" + s.avg_rating + "★ (" + s.review_count + " reviews)";
         }
 
-        // Add link to the spot detail / reviews page
         popup += '<br><a href="/spot/' + s.id + '">View details &amp; reviews</a>';
 
         marker.bindPopup(popup);
       }
     });
-
   }
 </script>
 {% endblock %}
-
-
-

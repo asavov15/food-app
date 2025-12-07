@@ -1,22 +1,32 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>My Favorite Spots</h2>
 
-{% if spots %}
-  <ul>
-    {% for spot in spots %}
-      <li>
-        <a href="/spot/{{ spot['id'] }}">{{ spot["name"] }}</a>
-        {% if spot["category"] %}
-          ({{ spot["category"] }})
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>You have no favorite spots yet.</p>
-  <p><a href="/spots">Browse spots</a> to add some.</p>
-{% endif %}
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2 class="card-title">My Favorite Spots</h2>
+      <p class="card-subtitle">Places you have saved.</p>
+    </div>
+  </div>
+
+  {% if spots %}
+    <ul class="spot-list mt-2">
+      {% for spot in spots %}
+        <li class="spot-item">
+          <a href="/spot/{{ spot['id'] }}">
+            <strong>{{ spot["name"] }}</strong>
+          </a>
+          <div class="spot-meta">
+            {{ spot["category"] if spot["category"] else "No category" }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>You have no favorite spots yet.</p>
+    <a href="/spots" class="btn btn-outline mt-2">Browse spots</a>
+  {% endif %}
+</div>
 
 {% endblock %}

@@ -1,23 +1,37 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>My Reviews</h2>
 
-{% if reviews %}
-  <ul>
-    {% for review in reviews %}
-      <li style="margin-bottom: 1rem;">
-        <strong>{{ review["rating"] }} stars</strong>
-        on
-        <a href="/spot/{{ review['spot_id'] }}">{{ review["spot_name"] }}</a><br>
-        {{ review["text"] }}<br>
-        <small>{{ review["created_at"] }}</small>
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2 class="card-title">My Reviews</h2>
+      <p class="card-subtitle">All the spots you've reviewed.</p>
+    </div>
+  </div>
+
+  {% if reviews %}
+    <ul class="spot-list mt-2">
+
+      {% for review in reviews %}
+      <li class="spot-item">
+
+        <div>
+          <strong>{{ review["rating"] }}★</strong>
+          on <a href="/spot/{{ review['spot_id'] }}">{{ review["spot_name"] }}</a>
+        </div>
+
+        <p style="margin:6px 0;">{{ review["text"] }}</p>
+        <small class="text-muted">{{ review["created_at"] }}</small>
+
       </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>You have not written any reviews yet.</p>
-  <p><a href="/spots">Browse spots</a> to start reviewing.</p>
-{% endif %}
+      {% endfor %}
+    </ul>
+
+  {% else %}
+    <p>You have not written any reviews yet.</p>
+    <a href="/spots" class="btn btn-outline mt-2">Browse spots</a>
+  {% endif %}
+</div>
 
 {% endblock %}

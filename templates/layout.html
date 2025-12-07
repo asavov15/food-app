@@ -1,10 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Food App</title>
+    <meta charset="utf-8" />
+    <title>HarvardEats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
-    <!-- Leaflet CSS (no integrity) -->
+    <!-- Leaflet CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -12,44 +16,50 @@
   </head>
 
   <body>
+
+    <!-- ───────────── NAVBAR ───────────── -->
     <header>
-      <h1>
-        <!-- Harvard seal image -->
-        <img
-          src="{{ url_for('static', filename='harvard_seal.png') }}"
-          alt="Harvard Seal"
-          class="harvard_seal"
-        >
-        HarvardEats
-      </h1>
+      <div class="nav-wrapper">
 
-      <nav>
-        <a href="/">Home</a> |
-        <a href="/spots">Spots</a> |
-        <a href="/add-spot">Add Spot</a>
-      </nav>
+        <!-- Left: seal + brand -->
+        <div class="branding">
+          <span class="brand-name">HarvardEats</span>
+        </div>
 
-      <div style="margin-top: 10px;">
-        {% if session.get("user_id") %}
-          Logged in as {{ session["username"] }} |
-          <a href="/my-reviews">My reviews</a> |
-          <a href="/favorites">My favorites</a> |
-          <a href="/logout">Log out</a>
-        {% else %}
-          <a href="/login">Log in</a> |
-          <a href="/register">Register</a>
-        {% endif %}
+        <!-- Center: main nav links -->
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/spots">Spots</a>
+          <a href="/add-spot">Add Spot</a>
+        </nav>
+
+        <!-- Right: auth / user links -->
+        <div class="auth-links">
+          {% if session.get("user_id") %}
+            <span class="user-label">Hi {{ session['username'] }}</span>
+            <span class="divider">|</span>
+            <a href="/my-reviews">My reviews</a>
+            <span class="divider">|</span>
+            <a href="/favorites">My favorites</a>
+            <span class="divider">|</span>
+            <a href="/logout">Log out</a>
+          {% else %}
+            <a href="/login">Log in</a>
+            <span class="divider">|</span>
+            <a href="/register">Register</a>
+          {% endif %}
+        </div>
+
       </div>
     </header>
 
+    <!-- ───────────── PAGE CONTENT ───────────── -->
     <main>
       {% block content %}{% endblock %}
     </main>
 
-    <!-- Leaflet JS (no integrity) -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    ></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     {% block scripts %}{% endblock %}
   </body>

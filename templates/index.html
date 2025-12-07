@@ -1,48 +1,79 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>Welcome to the Food App</h2>
 
-{% if session.get("user_id") %}
-  <p>Hi {{ session["username"] }}! Use this app to discover food spots around you and share your own reviews.</p>
-  <p><a href="/add-spot">Add a new spot</a> or <a href="/spots">browse all spots</a>.</p>
-{% else %}
-  <p>Use this app to discover food spots and read reviews from other users.</p>
-  <p><a href="/register">Create an account</a> or <a href="/login">log in</a> to start adding your own spots and reviews.</p>
-{% endif %}
+<div class="home-hero card">
+  <h1 class="home-title">Welcome to HarvardEats</h1>
 
-<h3>Recently added spots</h3>
+  {% if session.get("user_id") %}
+    <p class="home-intro">
+      Hi {{ session["username"] }}! Use this app to discover food spots around Harvard and share your own reviews.
+    </p>
+    <p class="home-actions">
+      <a href="/add-spot" class="btn btn-primary">Add a new spot</a>
+      <a href="/spots" class="btn btn-outline">Browse all spots</a>
+    </p>
+  {% else %}
+    <p class="home-intro">
+      Discover food spots around Harvard and read reviews from other students.
+    </p>
+    <p class="home-actions">
+      <a href="/register" class="btn btn-primary">Create an account</a>
+      <a href="/login" class="btn btn-outline">Log in</a>
+    </p>
+  {% endif %}
+</div>
 
-{% if spots %}
-  <ul>
-    {% for spot in spots %}
-  <li>
-    <a href="/spot/{{ spot['id'] }}">{{ spot["name"] }}</a>
-    {% if spot["category"] %} ({{ spot["category"] }}) {% endif %}
-
-    {% if spot["avg_rating"] is not none %}
-      – {{ spot["avg_rating"] }}★
-      ({{ spot["review_count"] }} review{% if spot["review_count"] != 1 %}s{% endif %})
-    {% else %}
-      – No reviews yet
-    {% endif %}
-
-    <!-- TAGS -->
-    <div class="tags">
-      {% if spot.late_night %}<span class="tag">Late Night</span>{% endif %}
-      {% if spot.fine_dining %}<span class="tag">Fine Dining</span>{% endif %}
-      {% if spot.health_conscious %}<span class="tag">Health Conscious</span>{% endif %}
-      {% if spot.affordable %}<span class="tag">Affordable</span>{% endif %}
-      {% if spot.sweet_treat %}<span class="tag">Sweet Treat</span>{% endif %}
-      {% if spot.close %}<span class="tag">Close to Harvard Yard</span>{% endif %}
+<div class="card home-spots">
+  <div class="card-header">
+    <div>
+      <h2 class="card-title">Top Rated Spots</h2>
+      <p class="card-subtitle">Highest rated food spots near Harvard Yard</p>
     </div>
-  </li>
-{% endfor %}
+    <a href="/spots" class="btn btn-outline">View all</a>
+  </div>
 
-  </ul>
-  <p><a href="/spots">View all spots</a></p>
-{% else %}
-  <p>No spots yet. Be the first to <a href="/add-spot">add one</a>!</p>
-{% endif %}
+  {% if spots %}
+    <ul class="spot-list">
+      {% for spot in spots %}
+        <li class="spot-item">
+          <div class="spot-item-row">
+            <div>
+              <a href="/spot/{{ spot['id'] }}" class="spot-name-link">
+                {{ spot["name"] }}
+              </a>
+
+              {% if spot["category"] %}
+                <div class="spot-meta">
+                  {{ spot["category"] }}
+                </div>
+              {% endif %}
+            </div>
+
+            <div class="spot-meta">
+              {% if spot["avg_rating"] is not none %}
+                ★ {{ spot["avg_rating"] }}
+                ({{ spot["review_count"] }} review{% if spot["review_count"] != 1 %}s{% endif %})
+              {% else %}
+                No reviews yet
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="tags">
+            {% if spot.late_night %}<span class="tag">Late Night</span>{% endif %}
+            {% if spot.fine_dining %}<span class="tag">Fine Dining</span>{% endif %}
+            {% if spot.health_conscious %}<span class="tag">Health Conscious</span>{% endif %}
+            {% if spot.affordable %}<span class="tag">Affordable</span>{% endif %}
+            {% if spot.sweet_treat %}<span class="tag">Sweet Treat</span>{% endif %}
+            {% if spot.close %}<span class="tag">Close to Harvard Yard</span>{% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="text-muted">No spots yet. Be the first to <a href="/add-spot">add one</a>!</p>
+  {% endif %}
+</div>
 
 {% endblock %}
