@@ -9,41 +9,44 @@ app.secret_key = "dev-secret-change-later"
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
+        email = request.form.get("email")
         username = request.form.get("username")
         password = request.form.get("password")
 
+        # Require Harvard email
+        if not email or not email.endswith("@college.harvard.edu"):
+            return render_template("register.html", error="You must register with a Harvard college email address.")
+
         if not username or not password:
-            return "Username and password required", 400
+            return render_template("register.html", error="All fields are required.")
 
         db = get_db()
 
-        # check if username already exists
-        existing = db.execute(
-            "SELECT id FROM users WHERE username = ?",
-            (username,)
-        ).fetchone()
-
-        if existing is not None:
+        # Email uniqueness check
+        exists_email = db.execute("SELECT id FROM users WHERE email = ?", (email,)).fetchone()
+        if exists_email:
             db.close()
-            return "Username already taken", 400
+            return render_template("register.html", error="Email already registered.")
 
-        hash_value = generate_password_hash(
-            password,
-            method="pbkdf2:sha256",
-            salt_length=16
-            )
+        # Username uniqueness check
+        exists_username = db.execute("SELECT id FROM users WHERE username = ?", (username,)).fetchone()
+        if exists_username:
+            db.close()
+            return render_template("register.html", error="Username already taken.")
+
+        hashed = generate_password_hash(password)
 
         db.execute(
-            "INSERT INTO users (username, hash) VALUES (?, ?)",
-            (username, hash_value)
+            "INSERT INTO users (email, username, hash) VALUES (?, ?, ?)",
+            (email, username, hashed)
         )
         db.commit()
         db.close()
 
         return redirect(url_for("login"))
 
-    # GET: show the form
     return render_template("register.html")
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
