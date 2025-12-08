@@ -17,23 +17,23 @@
 
   <body>
 
-    <!-- ───────────── NAVBAR ───────────── -->
+    <!-- Navigation Bar -->
     <header>
       <div class="nav-wrapper">
 
-        <!-- Left: seal + brand -->
+        <!-- Left side: HarvardEats logo -->
         <div class="branding">
           <span class="brand-name">HarvardEats</span>
         </div>
 
-        <!-- Center: main nav links -->
+        <!-- Center: Main navigation links -->
         <nav class="nav-links">
           <a href="/">Home</a>
           <a href="/spots">Spots</a>
           <a href="/add-spot">Add Spot</a>
         </nav>
 
-        <!-- Right: auth / user links -->
+        <!-- Right side: Authorization links -->
         <div class="auth-links">
           {% if session.get("user_id") %}
             <span class="user-label">Hi {{ session['username'] }}</span>
@@ -53,12 +53,12 @@
       </div>
     </header>
 
-    <!-- ───────────── PAGE CONTENT ───────────── -->
+    <!-- Main Content -->
     <main>
       {% block content %}{% endblock %}
     </main>
 
-    <!-- Leaflet JS -->
+    <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     {% block scripts %}{% endblock %}

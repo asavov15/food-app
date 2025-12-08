@@ -5,6 +5,8 @@
 <div class="home-hero card">
   <h1 class="home-title">Welcome to HarvardEats</h1>
 
+  <!-- Welcome user and display basic info -->
+
   {% if session.get("user_id") %}
     <p class="home-intro">
       Hi {{ session["username"] }}! Use this app to discover food spots around Harvard and share your own reviews.
@@ -24,6 +26,7 @@
   {% endif %}
 </div>
 
+<!-- Display the top rated spots across all users -->
 <div class="card home-spots">
   <div class="card-header">
     <div>

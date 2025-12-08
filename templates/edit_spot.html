@@ -3,6 +3,7 @@
 {% block content %}
 <h2>Edit Spot</h2>
 
+<!-- Form posts spot data to thhe edit-spot route -->
 <form action="/spot/{{ spot['id'] }}/edit" method="POST">
 
   <label>Name:</label><br>
@@ -17,6 +18,7 @@
   <label>Longitude:</label><br>
   <input type="number" step="0.000001" name="longitude" value="{{ spot['longitude'] }}"><br><br>
 
+  <!-- Tag choices -->
   <p>Tags:</p>
 
   <label>

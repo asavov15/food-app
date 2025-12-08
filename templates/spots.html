@@ -10,7 +10,11 @@
     </div>
   </div>
 
+  <!-- Filter and search through all food spots-->
+
   <form method="GET" action="/spots">
+
+    <!-- Query filter -->
     <label>Search (name or category):</label>
     <input
       type="text"
@@ -18,6 +22,7 @@
       value="{{ request.args.get('q', '') }}"
     >
 
+    <!-- Numeric filter -->
     <label>Min rating:</label>
     <input
       type="number"
@@ -27,7 +32,8 @@
       step="0.1"
       value="{{ request.args.get('min_rating', '') }}"
     >
-
+`
+    <!-- Checkbox tags filter -->
     <fieldset>
       <legend>Filter by tags:</legend>
 
@@ -117,6 +123,7 @@
     </div>
   </div>
 
+  <!-- Show details for each spot -->
   {% if spots %}
     <ul class="spot-list">
       {% for spot in spots %}
